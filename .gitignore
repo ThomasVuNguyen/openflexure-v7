@@ -1,0 +1,61 @@
+# Don't take stl files
+*.stl
+
+# Ignore CSG files (OpenSCAD output)
+*.csg
+
+# ignore build.env that is used for the version string
+build.env
+
+# Or gLTF files
+*.gltf
+*.glb
+
+# Ignore gcode files
+*.g
+*.gcode
+
+# Ignore SCA2D output files
+*.sca2d
+gl-code-quality-report.json
+scad_docs/
+
+# Ignore VIM swap files
+*.swp
+
+# Ignore zip files in the documentation dir
+docs/*.zip
+
+# Ignore automatically built files
+builds/
+docs/Output/
+*.d
+build.ninja
+render.ninja
+.ninja_deps
+.ninja_log
+docs/renders/
+rendering/annotations/*.png
+stl_options.json
+admesh_report.xml
+source.zip
+docs/models/dependency_hashes.yaml
+stl_changes.txt
+
+# Ignore IDE files
+.vscode/
+
+.DS_Store
+
+# Kate files
+*.backup
+
+# Python virtualenvironment
+.venv*/
+
+# Python cache
+__pycache__
+.pytest_cache/
+
+# Ignore the openflexure microscope extra folder if cloned in to test ninja build
+openflexure-microscope-extra/

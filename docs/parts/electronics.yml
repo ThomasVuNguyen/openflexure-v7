@@ -1,0 +1,158 @@
+ 
+Resistor_150R:
+  Description: 150 Ohm through hole resistor.
+  Name: 150 Ohm Resistor
+  Specs:
+    Resistance: 150 Ohm
+  Suppliers:
+    Proto Pic:
+      Link: https://proto-pic.co.uk/product/resistors-025w-carbon-film-resistor-pack-of-20/?attribute_pa_resistor-value=150r
+      PartNo: Search for Carbon Film Resistor
+DuPont_Housing_1x2:
+  Name: 1x2 Crimp Connector Housing
+  Description: 1x2 Crimp Connector Housing (2.54mm) 0.1″ – Dupont Compatible
+  Specs:
+    Standards: DuPont Compatible
+    Pitch: 2.54 mm
+    Housing size: 1x2
+  Suppliers:
+    Proto Pic:
+      Link: https://proto-pic.co.uk/product/pololu-6059-01-crimp-connector-housing-range-254mm/?attribute_pa_housing-size=1x2-25-pack
+      PartNo: Search for Crimp Connector Housings
+28BYJ-48:
+  Name: 28BYJ-48 Stepper Motors
+  Description: 28BYJ-48 5V micro-geared stepper motors.
+  Specs:
+    Voltage: 5 V
+    Steps per revolution: 4096
+28BYJ-48-Driver:
+  Name: 28BYJ-48 Driver Board
+  Description: This is a driver board for the 28BYJ-48 5V micro-geared stepper motor. The board should have come with the motor.
+LED_WarmWhite:
+  Name: Warm white LED
+  Description: A warm white 5mm through hole LED. Warm white is used to best match the spectrum of an incandescent bulb.
+  Specs:
+    Diameter: 5 mm
+    Colour Temperature: 2700-3500K
+  Suppliers:
+    RS Components:
+      Link: https://uk.rs-online.com/web/p/leds/7133983
+      PartNo: 713-3983
+Heatshrink_2.4mm_Red:
+  Name: Red heat shrink tubing, 2.4mm Diameter
+  Description: Heat shrink tubing with a shrink ratio of 2:1 or better
+  Specs:
+    Inner Diameter: 2.4 mm
+  Suppliers:
+    RS Components:
+      Link: https://uk.rs-online.com/web/p/heat-shrink-cold-shrink-sleeves/7004670
+      PartNo: 700-4670
+Heatshrink_4.8mm_Black:
+  Name: Black heat shrink tubing, 4.8mm Diameter
+  Description: Heat shrink tubing with a shrink ratio of 2:1 or better
+  Specs:
+    Inner Diameter: 4.8 mm
+  Suppliers:
+    RS Components:
+      Link: https://uk.rs-online.com/web/p/heat-shrink-cold-shrink-sleeves/0398199
+      PartNo: 398-199
+JumperCable_FF_300mm_Black:
+  Name: Black Female-Female pre-crimped jumper cables
+  Description: Pre-crimped jumper cables with DuPont compatible female crimp connectors. Crimping your own is possible, but can be difficult.
+  Specs:
+    Standards: DuPont Compatible
+    Length: 300 mm
+  Suppliers:
+    Proto Pic:
+      Link: https://proto-pic.co.uk/product/pre-crimped-jumper-wire-range/?attribute_pa_gender=female-to-female&attribute_pa_length=12-300mm&attribute_pa_colour=black-10-pack
+      PartNo:  Search for Pre-Crimped Jumper Wire
+JumperCable_FF_300mm_Red:
+  Name: Red Female-Female pre-crimped jumper cables
+  Description: Pre-crimped jumper cables with DuPont compatible female crimp connectors. Crimping your own is possible, but can be difficult.
+  Specs:
+    Standards: DuPont Compatible
+    Length: 300 mm
+  Suppliers:
+    Proto Pic:
+      Link: https://proto-pic.co.uk/product/pre-crimped-jumper-wire-range/?attribute_pa_gender=female-to-female&attribute_pa_length=12-300mm&attribute_pa_colour=red-10-pack
+      PartNo:  Search for Pre-Crimped Jumper Wire
+JumperCable:
+  Name: Female-Female pre-crimped jumper cables
+  Description: Pre-crimped jumper cables with DuPont compatible female crimp connectors. Crimping your own is possible, but can be difficult.
+  Specs:
+    Standards: DuPont Compatible
+  Suppliers:
+    Proto Pic:
+      Link: https://proto-pic.co.uk/product/pre-crimped-jumper-wire-range/?attribute_pa_gender=female-to-female
+      PartNo:  Search for Pre-Crimped Jumper Wire
+PiCamera_2:
+  Name: Raspberry Pi Camera Module
+  Description: Raspberry Pi Camera Module V2.1. The microscope is designed so v1 of the camera module will fit mechanically, however it is not supported in software any more.
+  Specs:
+    Version: V2.1
+  Suppliers:
+    RS Components:
+      Link: https://uk.rs-online.com/web/p/raspberry-pi-cameras/9132664/
+      PartNo: 913-2664
+RaspberryPi:
+  Name: Raspberry Pi 4B
+  Description: Raspberry Pi 4B. The microscope software supports Versions 3B, 3B+, and 4B. 4B is recommended.
+  Specs:
+    Version: 4B (or 3B, 3B+)
+  Suppliers:
+    RS Components:
+      Link: https://uk.rs-online.com/web/p/raspberry-pi/1822096/
+      PartNo: 182-2096
+RaspberryPi_PowerSupply:
+  Name: Raspberry Pi Power Supply (USB C)
+  Description: Power supply for the Raspberry Pi 4B. If using a 3B or 3B+ you will need a Micro USB B supply instead.
+  Specs:
+    Connector: USB C
+  Suppliers:
+    RS Components:
+      Link: https://uk.rs-online.com/web/p/raspberry-pi-power-supplies/1873416/
+      PartNo: 187-3416
+SD_Card:
+  Name: Micro SD card for Raspberry Pi
+  Description: Micro SD card to use with the Raspberry Pi and the OpenFlexure operating system. A1 or A2 class are recommended for the many small reads and writes needed.
+  Specs:
+    Type: microSD
+    Capacity: 16GB or more
+    Speed rating: A1 or more
+  Suppliers:
+  Suppliers:
+    RS Components:
+      Link: https://uk.rs-online.com/web/p/sd-cards/1873617
+      PartNo: 187-3617
+    RS Components:
+      Link: https://uk.rs-online.com/web/p/sd-cards/1747338
+      PartNo: 174-7338
+ArduinoNano:
+  Name: Arduino Nano
+  Description: The Arduino Nano 3.0 is a compact board featuring the ATmega328 microcontroller. It’s a complete, bread-board friendly development board which measures just 45 x 18 mm.
+  Suppliers:
+    RS Components:
+      Link: https://uk.rs-online.com/web/p/arduino/6961667/
+      PartNo: 696-1667
+Logitech_C270:
+  Name: Logitech C270 HD Webcam
+  Description: Logitech C270 HD Webcam for use with standard camera software. This camera is not supported in the OpenFlexure Microscope software, so it will not allow colour correction, autofocus or scanning modes.
+  Specs:
+    MPN: 960-001063
+  Suppliers:
+    CPC:
+      Link: https://cpc.farnell.com/logitech/960-001063/webcam-3mp-hd-c270-logitech/dp/CS30061
+      PartNo: CS30061
+    Newark:
+      Link: https://www.newark.com/logitech/960-001063/hd-pro-webcam-3mp-720p/dp/03AC4947
+      PartNo: 03AC4947
+Arducam_B0196:
+  Name: Arducam B0196 
+  Description: Arducam 8MP 1080P USB Camera Module, 1/4″ CMOS IMX219 Mini UVC USB2.0 Webcam. This camera is not supported in the OpenFlexure Microscope software, so it will not allow colour correction, autofocus or scanning modes.
+  Specs:
+    SKU: B0196
+    Sensor: Sony IMX219
+  Suppliers:
+    Arducam:
+      Link: https://www.arducam.com/product/b0196arducam-8mp-1080p-usb-camera-module-1-4-cmos-imx219-mini-uvc-usb2-0-webcam-board-with-1-64ft-0-5m-usb-cable-for-windows-linux-android-and-mac-os/
+      PartNo: B0196

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenFlexure Microscope v7 — Exploded View & Kinematic Analyzer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="canvas-container"></div>
+
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-left">
+      <div class="logo-badge">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+      </div>
+      <div>
+        <h1 class="header-title">OpenFlexure Microscope <span class="tag">v7.0.0</span></h1>
+        <p class="header-subtitle">Interactive 3D Exploded View &amp; Mechanical Engineering Kinematics</p>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="spec-pills">
+        <span class="pill"><span class="indicator-dot dot-blue"></span>Sub-Micron Flexure Stage</span>
+        <span class="pill"><span class="indicator-dot dot-green"></span>RMS DIN Optics</span>
+        <span class="pill"><span class="indicator-dot dot-purple"></span>RP2040 Sangaboard</span>
+      </div>
+      <button id="btn-fullscreen" class="icon-btn" title="Toggle Fullscreen">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Left Control Panel -->
+  <aside class="control-panel glass-panel">
+    <div class="panel-section">
+      <div class="section-header">
+        <span class="section-title">Exploded View Control</span>
+        <span id="explode-val-badge" class="badge">0%</span>
+      </div>
+      <div class="slider-group">
+        <input type="range" id="explode-slider" min="0" max="100" value="0" step="0.5">
+        <div class="slider-marks">
+          <span class="mark" data-val="0">Assembled (0%)</span>
+          <span class="mark" data-val="35">Inspection (35%)</span>
+          <span class="mark" data-val="70">Expanded (70%)</span>
+          <span class="mark" data-val="100">Full (100%)</span>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button id="btn-animate-explode" class="action-btn primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <span id="animate-label">Play Explode</span>
+        </button>
+        <button id="btn-reset-explode" class="action-btn secondary">Reset</button>
+      </div>
+    </div>
+
+    <!-- Subsystems -->
+    <div class="panel-section">
+      <div class="section-header">
+        <span class="section-title">Mechanical Subsystems</span>
+        <button id="btn-show-all" class="text-btn">Show All</button>
+      </div>
+      <div class="subsystem-list" id="subsystem-list">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+
+    <!-- Analysis Tools -->
+    <div class="panel-section">
+      <div class="section-header">
+        <span class="section-title">Inspection &amp; Analysis Modes</span>
+      </div>
+      <div class="toggle-grid">
+        <button id="btn-mode-shading" class="tool-btn active" title="Standard PBR Shading">
+          <span class="tool-icon">🎨</span> Solid
+        </button>
+        <button id="btn-mode-xray" class="tool-btn" title="Ghost / X-Ray Mode (Internal Flexures)">
+          <span class="tool-icon">👻</span> X-Ray
+        </button>
+        <button id="btn-mode-wireframe" class="tool-btn" title="Wireframe / Mesh Triangulation">
+          <span class="tool-icon">🕸️</span> Wireframe
+        </button>
+        <button id="btn-mode-tracers" class="tool-btn" title="Show Explosion Trajectory Lines">
+          <span class="tool-icon">📐</span> Tracers
+        </button>
+      </div>
+
+      <!-- Cross Section Section Plane -->
+      <div class="clipping-controls">
+        <div class="clipping-header">
+          <label class="checkbox-label">
+            <input type="checkbox" id="clip-enabled">
+            <span>Cross-Section Cutaway</span>
+          </label>
+          <div class="axis-selector">
+            <button class="axis-btn active" data-axis="y">Y</button>
+            <button class="axis-btn" data-axis="x">X</button>
+            <button class="axis-btn" data-axis="z">Z</button>
+          </div>
+        </div>
+        <div class="clipping-slider-wrap" id="clipping-slider-wrap" style="display: none;">
+          <input type="range" id="clip-slider" min="-100" max="150" value="70" step="1">
+          <div class="clip-info">
+            <span>Plane: <strong id="clip-axis-label">Y-Axis (Height)</strong></span>
+            <span id="clip-pos-label">70 mm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Right Component HUD Inspector -->
+  <aside class="inspector-panel glass-panel" id="inspector-panel">
+    <div class="inspector-header">
+      <div class="inspector-title-row">
+        <div class="status-indicator"></div>
+        <h2 id="hud-part-name" class="part-name">Monolithic Flexure Stage &amp; Body</h2>
+      </div>
+      <span id="hud-subsystem-badge" class="subsystem-badge badge-stage">Flexure Stage</span>
+    </div>
+
+    <div class="inspector-content">
+      <div class="hud-field">
+        <span class="field-label">Material &amp; Fabrication</span>
+        <span id="hud-material" class="field-val">PLA 3D-Printed (0.2mm layer)</span>
+      </div>
+
+      <div class="hud-field">
+        <span class="field-label">Kinematic Function</span>
+        <p id="hud-role" class="field-desc">
+          Single-piece printed structure featuring 3-axis parallelogram flexure hinges for friction-free sub-micron motion.
+        </p>
+      </div>
+
+      <div class="hud-grid-2">
+        <div class="hud-field">
+          <span class="field-label">Dimensions (W × H × D)</span>
+          <span id="hud-dimensions" class="field-val mono">142.9 × 75.0 × 116.1 mm</span>
+        </div>
+        <div class="hud-field">
+          <span class="field-label">Global Centroid</span>
+          <span id="hud-center" class="field-val mono">X: 0.0, Y: 112.5, Z: -23.0</span>
+        </div>
+      </div>
+
+      <div class="hud-engineering-tip">
+        <div class="tip-icon">💡</div>
+        <div class="tip-text" id="hud-engineering-note">
+          <strong>Mechanical Insight:</strong> The parallelogram flexure arms flex elastically without slip-stick friction, achieving reproducible positioning steps below 100 nanometers.
+        </div>
+      </div>
+    </div>
+
+    <div class="inspector-footer">
+      <span class="hint-text">Hover or click any component to inspect. Orbit: Left Drag • Pan: Right Drag • Zoom: Scroll</span>
+    </div>
+  </aside>
+
+  <!-- Bottom Floating View Toolbar -->
+  <div class="view-toolbar glass-panel">
+    <div class="views-group">
+      <span class="toolbar-label">Camera</span>
+      <button class="view-btn active" data-view="isometric">Isometric</button>
+      <button class="view-btn" data-view="top">Top (Stage)</button>
+      <button class="view-btn" data-view="front">Front (Optics)</button>
+      <button class="view-btn" data-view="side">Side (Actuators)</button>
+      <button class="view-btn" data-view="bottom">Underbody</button>
+    </div>
+    <div class="toolbar-divider"></div>
+    <div class="turntable-group">
+      <button id="btn-autorotate" class="toolbar-toggle-btn" title="Toggle Auto-Turntable Rotation">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+        </svg>
+        <span>Turntable</span>
+      </button>
+      <button id="btn-reset-cam" class="toolbar-toggle-btn" title="Reset Camera View">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+          <path d="M3 3v5h5"></path>
+        </svg>
+        <span>Reset</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="spinner-box">
+      <div class="cad-spinner"></div>
+      <div class="loading-text">Loading OpenFlexure 3D CAD Assembly...</div>
+      <div class="loading-progress" id="loading-bar-fill"></div>
+      <div class="loading-sub" id="loading-msg">Parsing 249 kinematic elements &amp; geometry...</div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

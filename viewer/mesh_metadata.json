@@ -1,0 +1,6974 @@
+{
+  "0": {
+    "id": 0,
+    "subsystem": "actuators",
+    "name": "28BYJ-48 Geared Stepper Motor (X-Axis)",
+    "material": "Steel / Copper / Gearbox",
+    "kinematic_role": "64:1 gear-reduced stepper motor providing microstepping drive.",
+    "center": [
+      53.94,
+      126.89,
+      -53.94
+    ],
+    "size": [
+      31.75,
+      20.5,
+      31.75
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      80,
+      10,
+      -50
+    ]
+  },
+  "1": {
+    "id": 1,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (X-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      59.6,
+      118.14,
+      -59.6
+    ],
+    "size": [
+      4.99,
+      20.0,
+      4.99
+    ],
+    "color": [
+      0.85,
+      0.65,
+      0.13,
+      1.0
+    ],
+    "vec": [
+      48.0,
+      10,
+      -30.0
+    ]
+  },
+  "2": {
+    "id": 2,
+    "subsystem": "actuators",
+    "name": "Small Motor Pinion Gear (X-Axis)",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "D-shaft pinion transferring torque to the large actuator thumbwheel gear.",
+    "center": [
+      48.46,
+      126.49,
+      -48.46
+    ],
+    "size": [
+      23.33,
+      16.5,
+      23.33
+    ],
+    "color": [
+      0.25,
+      0.41,
+      0.88,
+      1.0
+    ],
+    "vec": [
+      64.0,
+      10,
+      -40.0
+    ]
+  },
+  "3": {
+    "id": 3,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      52.12,
+      35.85,
+      -20.53
+    ],
+    "size": [
+      11.48,
+      7.7,
+      14.96
+    ],
+    "color": [
+      0.96,
+      0.96,
+      0.96,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "4": {
+    "id": 4,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      51.82,
+      35.5,
+      -20.71
+    ],
+    "size": [
+      8.37,
+      6.0,
+      11.3
+    ],
+    "color": [
+      0.5,
+      0.5,
+      0.5,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "5": {
+    "id": 5,
+    "subsystem": "actuators",
+    "name": "Stepper Motor Wiring Harness (X-Axis)",
+    "material": "Copper / PVC Insulated",
+    "kinematic_role": "5-conductor unipolar stepper phase cable connecting to Sangaboard JST header.",
+    "center": [
+      46.28,
+      79.32,
+      -33.69
+    ],
+    "size": [
+      15.86,
+      83.59,
+      25.94
+    ],
+    "color": [
+      1.0,
+      0.65,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      72.0,
+      -10,
+      -45.0
+    ]
+  },
+  "6": {
+    "id": 6,
+    "subsystem": "actuators",
+    "name": "Stepper Motor Wiring Harness (X-Axis)",
+    "material": "Copper / PVC Insulated",
+    "kinematic_role": "5-conductor unipolar stepper phase cable connecting to Sangaboard JST header.",
+    "center": [
+      46.09,
+      79.32,
+      -33.61
+    ],
+    "size": [
+      14.42,
+      83.59,
+      27.51
+    ],
+    "color": [
+      1.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      72.0,
+      -10,
+      -45.0
+    ]
+  },
+  "7": {
+    "id": 7,
+    "subsystem": "actuators",
+    "name": "Stepper Motor Wiring Harness (X-Axis)",
+    "material": "Copper / PVC Insulated",
+    "kinematic_role": "5-conductor unipolar stepper phase cable connecting to Sangaboard JST header.",
+    "center": [
+      46.77,
+      79.32,
+      -33.65
+    ],
+    "size": [
+      17.45,
+      83.59,
+      28.85
+    ],
+    "color": [
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      72.0,
+      -10,
+      -45.0
+    ]
+  },
+  "8": {
+    "id": 8,
+    "subsystem": "actuators",
+    "name": "Stepper Motor Wiring Harness (X-Axis)",
+    "material": "Copper / PVC Insulated",
+    "kinematic_role": "5-conductor unipolar stepper phase cable connecting to Sangaboard JST header.",
+    "center": [
+      44.45,
+      79.32,
+      -32.13
+    ],
+    "size": [
+      14.89,
+      83.59,
+      33.3
+    ],
+    "color": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      72.0,
+      -10,
+      -45.0
+    ]
+  },
+  "9": {
+    "id": 9,
+    "subsystem": "actuators",
+    "name": "Stepper Motor Wiring Harness (X-Axis)",
+    "material": "Copper / PVC Insulated",
+    "kinematic_role": "5-conductor unipolar stepper phase cable connecting to Sangaboard JST header.",
+    "center": [
+      44.79,
+      79.32,
+      -33.58
+    ],
+    "size": [
+      15.22,
+      83.59,
+      31.82
+    ],
+    "color": [
+      1.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      72.0,
+      -10,
+      -45.0
+    ]
+  },
+  "10": {
+    "id": 10,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (X-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      59.6,
+      111.39,
+      -59.6
+    ],
+    "size": [
+      16.63,
+      9.5,
+      16.63
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      48.0,
+      10,
+      -30.0
+    ]
+  },
+  "11": {
+    "id": 11,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (X-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      62.05,
+      110.54,
+      -58.19
+    ],
+    "size": [
+      4.2,
+      8.2,
+      4.2
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      48.0,
+      10,
+      -30.0
+    ]
+  },
+  "12": {
+    "id": 12,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (X-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      57.15,
+      110.54,
+      -61.01
+    ],
+    "size": [
+      4.2,
+      8.2,
+      4.2
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      48.0,
+      10,
+      -30.0
+    ]
+  },
+  "13": {
+    "id": 13,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (X-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      41.57,
+      117.14,
+      -66.32
+    ],
+    "size": [
+      5.49,
+      13.0,
+      5.49
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      48.0,
+      10,
+      -30.0
+    ]
+  },
+  "14": {
+    "id": 14,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (X-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      66.32,
+      117.14,
+      -41.57
+    ],
+    "size": [
+      5.49,
+      13.0,
+      5.49
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      48.0,
+      10,
+      -30.0
+    ]
+  },
+  "15": {
+    "id": 15,
+    "subsystem": "actuators",
+    "name": "Motor Mounting Lug / Bracket (X-Axis)",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "Rigid clamp securing stepper motor body onto microscope chassis.",
+    "center": [
+      48.64,
+      121.95,
+      -36.45
+    ],
+    "size": [
+      45.35,
+      6.02,
+      69.74
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      88.0,
+      25,
+      -55.0
+    ]
+  },
+  "16": {
+    "id": 16,
+    "subsystem": "actuators",
+    "name": "28BYJ-48 Geared Stepper Motor (Y-Axis)",
+    "material": "Steel / Copper / Gearbox",
+    "kinematic_role": "64:1 gear-reduced stepper motor providing microstepping drive.",
+    "center": [
+      -53.94,
+      126.89,
+      -53.94
+    ],
+    "size": [
+      31.75,
+      20.5,
+      31.75
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      -80,
+      10,
+      -50
+    ]
+  },
+  "17": {
+    "id": 17,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Y-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -59.6,
+      118.14,
+      -59.6
+    ],
+    "size": [
+      4.99,
+      20.0,
+      4.99
+    ],
+    "color": [
+      0.85,
+      0.65,
+      0.13,
+      1.0
+    ],
+    "vec": [
+      -48.0,
+      10,
+      -30.0
+    ]
+  },
+  "18": {
+    "id": 18,
+    "subsystem": "actuators",
+    "name": "Small Motor Pinion Gear (Y-Axis)",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "D-shaft pinion transferring torque to the large actuator thumbwheel gear.",
+    "center": [
+      -48.46,
+      126.49,
+      -48.46
+    ],
+    "size": [
+      23.33,
+      16.5,
+      23.33
+    ],
+    "color": [
+      0.25,
+      0.41,
+      0.88,
+      1.0
+    ],
+    "vec": [
+      -64.0,
+      10,
+      -40.0
+    ]
+  },
+  "19": {
+    "id": 19,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      -51.52,
+      35.85,
+      -20.89
+    ],
+    "size": [
+      11.48,
+      7.7,
+      14.96
+    ],
+    "color": [
+      0.96,
+      0.96,
+      0.96,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "20": {
+    "id": 20,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      -51.82,
+      35.5,
+      -20.71
+    ],
+    "size": [
+      8.37,
+      6.0,
+      11.3
+    ],
+    "color": [
+      0.5,
+      0.5,
+      0.5,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "21": {
+    "id": 21,
+    "subsystem": "actuators",
+    "name": "Stepper Motor Wiring Harness (Y-Axis)",
+    "material": "Copper / PVC Insulated",
+    "kinematic_role": "5-conductor unipolar stepper phase cable connecting to Sangaboard JST header.",
+    "center": [
+      -46.28,
+      79.32,
+      -33.69
+    ],
+    "size": [
+      15.86,
+      83.59,
+      25.94
+    ],
+    "color": [
+      1.0,
+      0.65,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      -72.0,
+      -10,
+      -45.0
+    ]
+  },
+  "22": {
+    "id": 22,
+    "subsystem": "actuators",
+    "name": "Stepper Motor Wiring Harness (Y-Axis)",
+    "material": "Copper / PVC Insulated",
+    "kinematic_role": "5-conductor unipolar stepper phase cable connecting to Sangaboard JST header.",
+    "center": [
+      -46.09,
+      79.32,
+      -33.61
+    ],
+    "size": [
+      14.42,
+      83.59,
+      27.51
+    ],
+    "color": [
+      1.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      -72.0,
+      -10,
+      -45.0
+    ]
+  },
+  "23": {
+    "id": 23,
+    "subsystem": "actuators",
+    "name": "Stepper Motor Wiring Harness (Y-Axis)",
+    "material": "Copper / PVC Insulated",
+    "kinematic_role": "5-conductor unipolar stepper phase cable connecting to Sangaboard JST header.",
+    "center": [
+      -46.77,
+      79.32,
+      -33.65
+    ],
+    "size": [
+      17.45,
+      83.59,
+      28.85
+    ],
+    "color": [
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      -72.0,
+      -10,
+      -45.0
+    ]
+  },
+  "24": {
+    "id": 24,
+    "subsystem": "actuators",
+    "name": "Stepper Motor Wiring Harness (Y-Axis)",
+    "material": "Copper / PVC Insulated",
+    "kinematic_role": "5-conductor unipolar stepper phase cable connecting to Sangaboard JST header.",
+    "center": [
+      -44.45,
+      79.32,
+      -32.13
+    ],
+    "size": [
+      14.89,
+      83.59,
+      33.3
+    ],
+    "color": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      -72.0,
+      -10,
+      -45.0
+    ]
+  },
+  "25": {
+    "id": 25,
+    "subsystem": "actuators",
+    "name": "Stepper Motor Wiring Harness (Y-Axis)",
+    "material": "Copper / PVC Insulated",
+    "kinematic_role": "5-conductor unipolar stepper phase cable connecting to Sangaboard JST header.",
+    "center": [
+      -44.79,
+      79.32,
+      -33.58
+    ],
+    "size": [
+      15.22,
+      83.59,
+      31.82
+    ],
+    "color": [
+      1.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      -72.0,
+      -10,
+      -45.0
+    ]
+  },
+  "26": {
+    "id": 26,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Y-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -59.6,
+      111.39,
+      -59.6
+    ],
+    "size": [
+      16.63,
+      9.5,
+      16.63
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      -48.0,
+      10,
+      -30.0
+    ]
+  },
+  "27": {
+    "id": 27,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Y-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -62.05,
+      110.54,
+      -58.19
+    ],
+    "size": [
+      4.2,
+      8.2,
+      4.2
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      -48.0,
+      10,
+      -30.0
+    ]
+  },
+  "28": {
+    "id": 28,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Y-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -57.15,
+      110.54,
+      -61.01
+    ],
+    "size": [
+      4.2,
+      8.2,
+      4.2
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      -48.0,
+      10,
+      -30.0
+    ]
+  },
+  "29": {
+    "id": 29,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Y-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -41.57,
+      117.14,
+      -66.32
+    ],
+    "size": [
+      5.49,
+      13.0,
+      5.49
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      -48.0,
+      10,
+      -30.0
+    ]
+  },
+  "30": {
+    "id": 30,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Y-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -66.32,
+      117.14,
+      -41.57
+    ],
+    "size": [
+      5.49,
+      13.0,
+      5.49
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      -48.0,
+      10,
+      -30.0
+    ]
+  },
+  "31": {
+    "id": 31,
+    "subsystem": "actuators",
+    "name": "Motor Mounting Lug / Bracket (Y-Axis)",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "Rigid clamp securing stepper motor body onto microscope chassis.",
+    "center": [
+      -48.64,
+      121.95,
+      -36.45
+    ],
+    "size": [
+      45.35,
+      6.02,
+      69.74
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      -88.0,
+      25,
+      -55.0
+    ]
+  },
+  "32": {
+    "id": 32,
+    "subsystem": "actuators",
+    "name": "Motor Mounting Lug / Bracket (Z-Axis)",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "Rigid clamp securing stepper motor body onto microscope chassis.",
+    "center": [
+      0.0,
+      114.25,
+      -75.22
+    ],
+    "size": [
+      77.69,
+      14.67,
+      31.13
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      5,
+      -99.0
+    ]
+  },
+  "33": {
+    "id": 33,
+    "subsystem": "actuators",
+    "name": "28BYJ-48 Geared Stepper Motor (Z-Axis)",
+    "material": "Steel / Copper / Gearbox",
+    "kinematic_role": "64:1 gear-reduced stepper motor providing microstepping drive.",
+    "center": [
+      0.0,
+      125.91,
+      -67.78
+    ],
+    "size": [
+      42.0,
+      28.81,
+      33.33
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -10,
+      -90
+    ]
+  },
+  "34": {
+    "id": 34,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      0.0,
+      120.53,
+      -56.58
+    ],
+    "size": [
+      4.99,
+      20.29,
+      12.76
+    ],
+    "color": [
+      0.85,
+      0.65,
+      0.13,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "35": {
+    "id": 35,
+    "subsystem": "actuators",
+    "name": "Small Motor Pinion Gear (Z-Axis)",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "D-shaft pinion transferring torque to the large actuator thumbwheel gear.",
+    "center": [
+      0.0,
+      121.37,
+      -75.06
+    ],
+    "size": [
+      17.5,
+      22.02,
+      22.27
+    ],
+    "color": [
+      0.25,
+      0.41,
+      0.88,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -72.0
+    ]
+  },
+  "36": {
+    "id": 36,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      26.91,
+      38.95,
+      -38.54
+    ],
+    "size": [
+      15.32,
+      10.09,
+      10.1
+    ],
+    "color": [
+      0.96,
+      0.96,
+      0.96,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "37": {
+    "id": 37,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      27.0,
+      38.32,
+      -38.24
+    ],
+    "size": [
+      11.75,
+      7.87,
+      7.79
+    ],
+    "color": [
+      0.5,
+      0.5,
+      0.5,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "38": {
+    "id": 38,
+    "subsystem": "actuators",
+    "name": "Stepper Motor Wiring Harness (Z-Axis)",
+    "material": "Copper / PVC Insulated",
+    "kinematic_role": "5-conductor unipolar stepper phase cable connecting to Sangaboard JST header.",
+    "center": [
+      14.65,
+      78.21,
+      -61.79
+    ],
+    "size": [
+      30.93,
+      76.24,
+      45.98
+    ],
+    "color": [
+      1.0,
+      0.65,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -30,
+      -81.0
+    ]
+  },
+  "39": {
+    "id": 39,
+    "subsystem": "actuators",
+    "name": "Stepper Motor Wiring Harness (Z-Axis)",
+    "material": "Copper / PVC Insulated",
+    "kinematic_role": "5-conductor unipolar stepper phase cable connecting to Sangaboard JST header.",
+    "center": [
+      14.31,
+      78.07,
+      -62.25
+    ],
+    "size": [
+      28.0,
+      76.51,
+      45.71
+    ],
+    "color": [
+      1.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -30,
+      -81.0
+    ]
+  },
+  "40": {
+    "id": 40,
+    "subsystem": "actuators",
+    "name": "Stepper Motor Wiring Harness (Z-Axis)",
+    "material": "Copper / PVC Insulated",
+    "kinematic_role": "5-conductor unipolar stepper phase cable connecting to Sangaboard JST header.",
+    "center": [
+      16.04,
+      78.34,
+      -62.19
+    ],
+    "size": [
+      33.07,
+      75.97,
+      47.99
+    ],
+    "color": [
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -30,
+      -81.0
+    ]
+  },
+  "41": {
+    "id": 41,
+    "subsystem": "actuators",
+    "name": "Stepper Motor Wiring Harness (Z-Axis)",
+    "material": "Copper / PVC Insulated",
+    "kinematic_role": "5-conductor unipolar stepper phase cable connecting to Sangaboard JST header.",
+    "center": [
+      12.85,
+      77.8,
+      -63.55
+    ],
+    "size": [
+      28.69,
+      77.05,
+      45.92
+    ],
+    "color": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -30,
+      -81.0
+    ]
+  },
+  "42": {
+    "id": 42,
+    "subsystem": "actuators",
+    "name": "Stepper Motor Wiring Harness (Z-Axis)",
+    "material": "Copper / PVC Insulated",
+    "kinematic_role": "5-conductor unipolar stepper phase cable connecting to Sangaboard JST header.",
+    "center": [
+      12.1,
+      77.94,
+      -62.82
+    ],
+    "size": [
+      29.2,
+      76.78,
+      45.65
+    ],
+    "color": [
+      1.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -30,
+      -81.0
+    ]
+  },
+  "43": {
+    "id": 43,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      0.0,
+      114.53,
+      -54.16
+    ],
+    "size": [
+      16.63,
+      15.17,
+      18.37
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "44": {
+    "id": 44,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      2.73,
+      113.6,
+      -52.14
+    ],
+    "size": [
+      4.2,
+      8.07,
+      5.32
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "45": {
+    "id": 45,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -2.73,
+      113.0,
+      -53.47
+    ],
+    "size": [
+      4.2,
+      8.07,
+      5.33
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "46": {
+    "id": 46,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -17.5,
+      116.65,
+      -64.15
+    ],
+    "size": [
+      5.5,
+      13.49,
+      8.99
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "47": {
+    "id": 47,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      17.5,
+      116.65,
+      -64.15
+    ],
+    "size": [
+      5.5,
+      13.49,
+      8.99
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "48": {
+    "id": 48,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -44.39,
+      118.04,
+      -7.45
+    ],
+    "size": [
+      4.2,
+      8.2,
+      4.2
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "49": {
+    "id": 49,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      44.39,
+      118.04,
+      -7.45
+    ],
+    "size": [
+      4.2,
+      8.2,
+      4.2
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "50": {
+    "id": 50,
+    "subsystem": "illumination",
+    "name": "Illumination Dovetail Riser Arm",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "Rigid vertical dovetail supporting condenser over sample stage.",
+    "center": [
+      0.06,
+      168.0,
+      -49.25
+    ],
+    "size": [
+      47.88,
+      60.0,
+      28.5
+    ],
+    "color": [
+      0.96,
+      0.96,
+      0.96,
+      1.0
+    ],
+    "vec": [
+      0,
+      60,
+      -30
+    ]
+  },
+  "51": {
+    "id": 51,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      20.0,
+      137.85,
+      -58.03
+    ],
+    "size": [
+      5.5,
+      13.0,
+      5.5
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "52": {
+    "id": 52,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      20.0,
+      141.17,
+      -58.03
+    ],
+    "size": [
+      7.0,
+      0.45,
+      7.0
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "53": {
+    "id": 53,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -20.0,
+      137.85,
+      -58.03
+    ],
+    "size": [
+      5.5,
+      13.0,
+      5.5
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "54": {
+    "id": 54,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -20.0,
+      141.17,
+      -58.03
+    ],
+    "size": [
+      7.0,
+      0.45,
+      7.0
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "55": {
+    "id": 55,
+    "subsystem": "illumination",
+    "name": "Condenser Shroud & Aperture Diaphragm",
+    "material": "PLA 3D-Printed / Optical Glass",
+    "kinematic_role": "Focuses illumination onto sample plane with adjustable numerical aperture.",
+    "center": [
+      0.0,
+      170.0,
+      -15.15
+    ],
+    "size": [
+      29.27,
+      30.0,
+      47.7
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      90,
+      -10
+    ]
+  },
+  "56": {
+    "id": 56,
+    "subsystem": "stage_body",
+    "name": "Stage Structural Fastener",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Secures stage flexure blocks and stops.",
+    "center": [
+      0.0,
+      160.0,
+      0.0
+    ],
+    "size": [
+      13.0,
+      4.99,
+      13.0
+    ],
+    "color": [
+      0.69,
+      0.93,
+      0.93,
+      0.6
+    ],
+    "vec": [
+      0.0,
+      30,
+      0.0
+    ]
+  },
+  "57": {
+    "id": 57,
+    "subsystem": "illumination",
+    "name": "Condenser Shroud & Aperture Diaphragm",
+    "material": "PLA 3D-Printed / Optical Glass",
+    "kinematic_role": "Focuses illumination onto sample plane with adjustable numerical aperture.",
+    "center": [
+      -4.85,
+      177.0,
+      -35.1
+    ],
+    "size": [
+      4.85,
+      6.4,
+      6.0
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      90,
+      -10
+    ]
+  },
+  "58": {
+    "id": 58,
+    "subsystem": "illumination",
+    "name": "Condenser Shroud & Aperture Diaphragm",
+    "material": "PLA 3D-Printed / Optical Glass",
+    "kinematic_role": "Focuses illumination onto sample plane with adjustable numerical aperture.",
+    "center": [
+      -13.1,
+      177.0,
+      -29.77
+    ],
+    "size": [
+      25.7,
+      5.54,
+      17.4
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      90,
+      -10
+    ]
+  },
+  "59": {
+    "id": 59,
+    "subsystem": "illumination",
+    "name": "Condenser Shroud & Aperture Diaphragm",
+    "material": "PLA 3D-Printed / Optical Glass",
+    "kinematic_role": "Focuses illumination onto sample plane with adjustable numerical aperture.",
+    "center": [
+      -18.78,
+      177.0,
+      -26.77
+    ],
+    "size": [
+      16.62,
+      10.0,
+      14.79
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      90,
+      -10
+    ]
+  },
+  "60": {
+    "id": 60,
+    "subsystem": "illumination",
+    "name": "Condenser Lid & High-CRI LED Module",
+    "material": "PLA 3D-Printed / 5mm LED",
+    "kinematic_role": "Transmitted light source housing with quasi-Kohler LED positioning.",
+    "center": [
+      0.0,
+      192.74,
+      -11.66
+    ],
+    "size": [
+      26.47,
+      17.38,
+      43.55
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      120,
+      -20
+    ]
+  },
+  "61": {
+    "id": 61,
+    "subsystem": "illumination",
+    "name": "Illumination Dovetail Riser Arm",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "Rigid vertical dovetail supporting condenser over sample stage.",
+    "center": [
+      6.5,
+      184.6,
+      -9.5
+    ],
+    "size": [
+      4.2,
+      8.2,
+      4.2
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      60,
+      -30
+    ]
+  },
+  "62": {
+    "id": 62,
+    "subsystem": "illumination",
+    "name": "Illumination Dovetail Riser Arm",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "Rigid vertical dovetail supporting condenser over sample stage.",
+    "center": [
+      -6.5,
+      184.6,
+      -9.5
+    ],
+    "size": [
+      4.2,
+      8.2,
+      4.2
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      60,
+      -30
+    ]
+  },
+  "63": {
+    "id": 63,
+    "subsystem": "optics",
+    "name": "Camera CSI Ribbon Cable",
+    "material": "Flexible Flat Cable (FFC)",
+    "kinematic_role": "High-speed MIPI-CSI interface connecting camera to Raspberry Pi.",
+    "center": [
+      -15.58,
+      131.0,
+      -42.75
+    ],
+    "size": [
+      32.16,
+      112.96,
+      66.45
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      -10,
+      -50,
+      20
+    ]
+  },
+  "64": {
+    "id": 64,
+    "subsystem": "optics",
+    "name": "Camera CSI Ribbon Cable",
+    "material": "Flexible Flat Cable (FFC)",
+    "kinematic_role": "High-speed MIPI-CSI interface connecting camera to Raspberry Pi.",
+    "center": [
+      -16.06,
+      131.25,
+      -42.61
+    ],
+    "size": [
+      33.12,
+      113.45,
+      66.17
+    ],
+    "color": [
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      -10,
+      -50,
+      20
+    ]
+  },
+  "65": {
+    "id": 65,
+    "subsystem": "base_electronics",
+    "name": "Microscope Base Stand",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "Sturdy foundation housing Raspberry Pi, Sangaboard, and power distribution.",
+    "center": [
+      0.06,
+      39.0,
+      -19.81
+    ],
+    "size": [
+      170.6,
+      78.0,
+      133.88
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      0
+    ]
+  },
+  "66": {
+    "id": 66,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      37.71,
+      70.55,
+      8.0
+    ],
+    "size": [
+      5.54,
+      2.4,
+      6.4
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "67": {
+    "id": 67,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -37.71,
+      70.55,
+      8.0
+    ],
+    "size": [
+      5.54,
+      2.4,
+      6.4
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "68": {
+    "id": 68,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Y-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -61.93,
+      70.55,
+      -35.99
+    ],
+    "size": [
+      6.01,
+      2.4,
+      6.3
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      -48.0,
+      10,
+      -30.0
+    ]
+  },
+  "69": {
+    "id": 69,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (X-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      61.93,
+      70.55,
+      -35.99
+    ],
+    "size": [
+      6.01,
+      2.4,
+      6.3
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      48.0,
+      10,
+      -30.0
+    ]
+  },
+  "70": {
+    "id": 70,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      37.71,
+      75.0,
+      8.0
+    ],
+    "size": [
+      5.5,
+      13.0,
+      5.5
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "71": {
+    "id": 71,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -37.71,
+      75.0,
+      8.0
+    ],
+    "size": [
+      5.5,
+      13.0,
+      5.5
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "72": {
+    "id": 72,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Y-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -61.93,
+      75.0,
+      -35.99
+    ],
+    "size": [
+      5.5,
+      13.0,
+      5.5
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      -48.0,
+      10,
+      -30.0
+    ]
+  },
+  "73": {
+    "id": 73,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (X-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      61.93,
+      75.0,
+      -35.99
+    ],
+    "size": [
+      5.5,
+      13.0,
+      5.5
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      48.0,
+      10,
+      -30.0
+    ]
+  },
+  "74": {
+    "id": 74,
+    "subsystem": "optics",
+    "name": "Raspberry Pi Camera v2 Sensor",
+    "material": "CMOS Sensor / PCB",
+    "kinematic_role": "Sony IMX219 8MP sensor capturing diffraction-limited digital images.",
+    "center": [
+      -1.7,
+      81.28,
+      -1.7
+    ],
+    "size": [
+      32.86,
+      47.45,
+      32.86
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -80,
+      50
+    ]
+  },
+  "75": {
+    "id": 75,
+    "subsystem": "optics",
+    "name": "Raspberry Pi Camera v2 Sensor",
+    "material": "CMOS Sensor / PCB",
+    "kinematic_role": "Sony IMX219 8MP sensor capturing diffraction-limited digital images.",
+    "center": [
+      0.0,
+      95.5,
+      -15.55
+    ],
+    "size": [
+      5.54,
+      6.4,
+      2.4
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -80,
+      50
+    ]
+  },
+  "76": {
+    "id": 76,
+    "subsystem": "optics",
+    "name": "Raspberry Pi Camera v2 Sensor",
+    "material": "CMOS Sensor / PCB",
+    "kinematic_role": "Sony IMX219 8MP sensor capturing diffraction-limited digital images.",
+    "center": [
+      0.0,
+      95.5,
+      -16.5
+    ],
+    "size": [
+      5.5,
+      5.5,
+      13.0
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -80,
+      50
+    ]
+  },
+  "77": {
+    "id": 77,
+    "subsystem": "optics",
+    "name": "Raspberry Pi Camera v2 Sensor",
+    "material": "CMOS Sensor / PCB",
+    "kinematic_role": "Sony IMX219 8MP sensor capturing diffraction-limited digital images.",
+    "center": [
+      -0.94,
+      57.0,
+      -0.94
+    ],
+    "size": [
+      31.23,
+      1.0,
+      31.23
+    ],
+    "color": [
+      0.0,
+      0.5,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -80,
+      50
+    ]
+  },
+  "78": {
+    "id": 78,
+    "subsystem": "optics",
+    "name": "Raspberry Pi Camera v2 Sensor",
+    "material": "CMOS Sensor / PCB",
+    "kinematic_role": "Sony IMX219 8MP sensor capturing diffraction-limited digital images.",
+    "center": [
+      -4.1,
+      57.0,
+      -4.1
+    ],
+    "size": [
+      28.13,
+      1.0,
+      28.13
+    ],
+    "color": [
+      0.74,
+      0.72,
+      0.42,
+      1.0
+    ],
+    "vec": [
+      0,
+      -80,
+      50
+    ]
+  },
+  "79": {
+    "id": 79,
+    "subsystem": "optics",
+    "name": "Raspberry Pi Camera v2 Sensor",
+    "material": "CMOS Sensor / PCB",
+    "kinematic_role": "Sony IMX219 8MP sensor capturing diffraction-limited digital images.",
+    "center": [
+      -4.18,
+      58.0,
+      -3.47
+    ],
+    "size": [
+      14.28,
+      1.0,
+      12.86
+    ],
+    "color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -80,
+      50
+    ]
+  },
+  "80": {
+    "id": 80,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      -3.01,
+      60.25,
+      -2.3
+    ],
+    "size": [
+      18.03,
+      3.5,
+      16.62
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "81": {
+    "id": 81,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      0.0,
+      60.1,
+      0.0
+    ],
+    "size": [
+      4.95,
+      1.0,
+      4.95
+    ],
+    "color": [
+      0.28,
+      0.24,
+      0.55,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "82": {
+    "id": 82,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      4.76,
+      55.25,
+      4.76
+    ],
+    "size": [
+      18.07,
+      2.5,
+      18.07
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "83": {
+    "id": 83,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      4.24,
+      55.25,
+      4.24
+    ],
+    "size": [
+      16.26,
+      2.5,
+      16.26
+    ],
+    "color": [
+      0.82,
+      0.71,
+      0.55,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "84": {
+    "id": 84,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      1.41,
+      56.25,
+      -9.9
+    ],
+    "size": [
+      3.18,
+      0.5,
+      3.18
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "85": {
+    "id": 85,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      -2.12,
+      56.25,
+      -6.36
+    ],
+    "size": [
+      3.18,
+      0.5,
+      3.18
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "86": {
+    "id": 86,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      -3.18,
+      56.25,
+      -10.96
+    ],
+    "size": [
+      3.18,
+      0.5,
+      3.18
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "87": {
+    "id": 87,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      -3.54,
+      56.25,
+      -2.12
+    ],
+    "size": [
+      1.77,
+      0.5,
+      1.77
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "88": {
+    "id": 88,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      -3.54,
+      56.25,
+      0.71
+    ],
+    "size": [
+      3.54,
+      0.5,
+      3.54
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "89": {
+    "id": 89,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      -1.41,
+      56.0,
+      2.83
+    ],
+    "size": [
+      2.12,
+      1.0,
+      2.12
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "90": {
+    "id": 90,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      4.95,
+      56.25,
+      -3.54
+    ],
+    "size": [
+      2.12,
+      0.5,
+      2.12
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "91": {
+    "id": 91,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      2.83,
+      56.25,
+      -1.41
+    ],
+    "size": [
+      2.12,
+      0.5,
+      2.12
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "92": {
+    "id": 92,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      0.71,
+      56.25,
+      0.71
+    ],
+    "size": [
+      2.12,
+      0.5,
+      2.12
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "93": {
+    "id": 93,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      -7.78,
+      56.0,
+      0.71
+    ],
+    "size": [
+      3.54,
+      1.0,
+      3.54
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "94": {
+    "id": 94,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      -9.19,
+      56.0,
+      -0.71
+    ],
+    "size": [
+      2.83,
+      1.0,
+      2.83
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "95": {
+    "id": 95,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      -11.67,
+      56.0,
+      3.18
+    ],
+    "size": [
+      3.54,
+      1.0,
+      3.54
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "96": {
+    "id": 96,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      -2.76,
+      55.0,
+      -2.76
+    ],
+    "size": [
+      32.53,
+      3.0,
+      32.53
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "97": {
+    "id": 97,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      -7.35,
+      56.9,
+      7.49
+    ],
+    "size": [
+      4.2,
+      8.2,
+      4.2
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "98": {
+    "id": 98,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      7.49,
+      56.9,
+      -7.35
+    ],
+    "size": [
+      4.2,
+      8.2,
+      4.2
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "99": {
+    "id": 99,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      2.25,
+      39.12,
+      2.25
+    ],
+    "size": [
+      36.17,
+      34.75,
+      36.17
+    ],
+    "color": [
+      0.96,
+      0.96,
+      0.96,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "100": {
+    "id": 100,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      7.07,
+      56.25,
+      7.07
+    ],
+    "size": [
+      18.38,
+      0.5,
+      18.38
+    ],
+    "color": [
+      0.96,
+      0.96,
+      0.96,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "101": {
+    "id": 101,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      7.07,
+      56.0,
+      7.07
+    ],
+    "size": [
+      18.38,
+      0.1,
+      18.38
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "102": {
+    "id": 102,
+    "subsystem": "optics",
+    "name": "Optics Platform & Fasteners",
+    "material": "PLA 3D-Printed / Stainless Steel",
+    "kinematic_role": "Mounting platform securing optical assembly into the Z-stage.",
+    "center": [
+      5.3,
+      56.5,
+      5.3
+    ],
+    "size": [
+      13.93,
+      0.1,
+      13.93
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -60,
+      40
+    ]
+  },
+  "103": {
+    "id": 103,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      -13.54,
+      22.0,
+      -13.54
+    ],
+    "size": [
+      18.38,
+      0.5,
+      18.38
+    ],
+    "color": [
+      0.96,
+      0.96,
+      0.96,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "104": {
+    "id": 104,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      -13.54,
+      21.75,
+      -13.54
+    ],
+    "size": [
+      18.38,
+      0.1,
+      18.38
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "105": {
+    "id": 105,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      -15.3,
+      22.25,
+      -15.3
+    ],
+    "size": [
+      13.93,
+      0.1,
+      13.93
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "106": {
+    "id": 106,
+    "subsystem": "optics",
+    "name": "RMS Microscope Objective",
+    "material": "Precision Brass / Optical Glass",
+    "kinematic_role": "Standard DIN/RMS conjugate objective delivering primary optical magnification.",
+    "center": [
+      0.0,
+      125.87,
+      0.0
+    ],
+    "size": [
+      24.5,
+      41.55,
+      24.5
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -20,
+      80
+    ]
+  },
+  "107": {
+    "id": 107,
+    "subsystem": "optics",
+    "name": "RMS Microscope Objective",
+    "material": "Precision Brass / Optical Glass",
+    "kinematic_role": "Standard DIN/RMS conjugate objective delivering primary optical magnification.",
+    "center": [
+      0.0,
+      103.12,
+      0.0
+    ],
+    "size": [
+      19.82,
+      4.05,
+      19.82
+    ],
+    "color": [
+      0.85,
+      0.65,
+      0.13,
+      1.0
+    ],
+    "vec": [
+      0,
+      -20,
+      80
+    ]
+  },
+  "108": {
+    "id": 108,
+    "subsystem": "optics",
+    "name": "RMS Microscope Objective",
+    "material": "Precision Brass / Optical Glass",
+    "kinematic_role": "Standard DIN/RMS conjugate objective delivering primary optical magnification.",
+    "center": [
+      0.0,
+      123.58,
+      0.0
+    ],
+    "size": [
+      19.0,
+      45.95,
+      19.0
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -20,
+      80
+    ]
+  },
+  "109": {
+    "id": 109,
+    "subsystem": "optics",
+    "name": "RMS Microscope Objective",
+    "material": "Precision Brass / Optical Glass",
+    "kinematic_role": "Standard DIN/RMS conjugate objective delivering primary optical magnification.",
+    "center": [
+      0.0,
+      118.6,
+      0.0
+    ],
+    "size": [
+      24.53,
+      1.0,
+      24.53
+    ],
+    "color": [
+      0.0,
+      0.75,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -20,
+      80
+    ]
+  },
+  "110": {
+    "id": 110,
+    "subsystem": "optics",
+    "name": "RMS Microscope Objective",
+    "material": "Precision Brass / Optical Glass",
+    "kinematic_role": "Standard DIN/RMS conjugate objective delivering primary optical magnification.",
+    "center": [
+      0.0,
+      95.74,
+      0.0
+    ],
+    "size": [
+      12.7,
+      4.48,
+      12.7
+    ],
+    "color": [
+      0.69,
+      0.93,
+      0.93,
+      0.6
+    ],
+    "vec": [
+      0,
+      -20,
+      80
+    ]
+  },
+  "111": {
+    "id": 111,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (X-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      45.46,
+      96.05,
+      -45.46
+    ],
+    "size": [
+      6.18,
+      2.4,
+      6.18
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      48.0,
+      10,
+      -30.0
+    ]
+  },
+  "112": {
+    "id": 112,
+    "subsystem": "actuators",
+    "name": "M3x25mm Stainless Leadscrew Bolt (X-Axis)",
+    "material": "A2 Stainless Steel (DIN 933)",
+    "kinematic_role": "Precision leadscrew translating rotary motion into axial flexure displacement.",
+    "center": [
+      45.46,
+      98.06,
+      -45.46
+    ],
+    "size": [
+      6.18,
+      27.12,
+      6.18
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      40.0,
+      -55,
+      -25.0
+    ]
+  },
+  "113": {
+    "id": 113,
+    "subsystem": "actuators",
+    "name": "Large Actuator Gear Thumbwheel (X-Axis)",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "Compound gear providing ~2:1 reduction and housing M3 captive drive nut.",
+    "center": [
+      45.46,
+      111.0,
+      -45.46
+    ],
+    "size": [
+      28.89,
+      6.0,
+      28.89
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      40.0,
+      -40,
+      -25.0
+    ]
+  },
+  "114": {
+    "id": 114,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (X-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      45.46,
+      107.72,
+      -45.46
+    ],
+    "size": [
+      6.99,
+      0.45,
+      6.99
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      48.0,
+      10,
+      -30.0
+    ]
+  },
+  "115": {
+    "id": 115,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (X-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      45.46,
+      107.22,
+      -45.46
+    ],
+    "size": [
+      6.99,
+      0.45,
+      6.99
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      48.0,
+      10,
+      -30.0
+    ]
+  },
+  "116": {
+    "id": 116,
+    "subsystem": "actuators",
+    "name": "Actuator Foot (X-Axis)",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "Lower anchor foot holding Viton band under constant elastic tension.",
+    "center": [
+      45.46,
+      68.25,
+      -45.46
+    ],
+    "size": [
+      24.66,
+      16.5,
+      24.66
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      24.0,
+      -65,
+      -15.0
+    ]
+  },
+  "117": {
+    "id": 117,
+    "subsystem": "actuators",
+    "name": "Viton Elastic Preload Band (X-Axis)",
+    "material": "Viton Fluoroelastomer",
+    "kinematic_role": "Eliminates backlash by providing continuous downward preload against leadscrew.",
+    "center": [
+      45.46,
+      81.75,
+      -45.46
+    ],
+    "size": [
+      17.56,
+      39.5,
+      17.56
+    ],
+    "color": [
+      0.5,
+      0.5,
+      0.5,
+      1.0
+    ],
+    "vec": [
+      32.0,
+      -20,
+      -20.0
+    ]
+  },
+  "118": {
+    "id": 118,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Y-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -45.46,
+      96.05,
+      -45.46
+    ],
+    "size": [
+      6.18,
+      2.4,
+      6.18
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      -48.0,
+      10,
+      -30.0
+    ]
+  },
+  "119": {
+    "id": 119,
+    "subsystem": "actuators",
+    "name": "M3x25mm Stainless Leadscrew Bolt (Y-Axis)",
+    "material": "A2 Stainless Steel (DIN 933)",
+    "kinematic_role": "Precision leadscrew translating rotary motion into axial flexure displacement.",
+    "center": [
+      -45.46,
+      98.06,
+      -45.46
+    ],
+    "size": [
+      6.18,
+      27.12,
+      6.18
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      -40.0,
+      -55,
+      -25.0
+    ]
+  },
+  "120": {
+    "id": 120,
+    "subsystem": "actuators",
+    "name": "Large Actuator Gear Thumbwheel (Y-Axis)",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "Compound gear providing ~2:1 reduction and housing M3 captive drive nut.",
+    "center": [
+      -45.46,
+      111.0,
+      -45.46
+    ],
+    "size": [
+      28.89,
+      6.0,
+      28.89
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      -40.0,
+      -40,
+      -25.0
+    ]
+  },
+  "121": {
+    "id": 121,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Y-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -45.46,
+      107.72,
+      -45.46
+    ],
+    "size": [
+      6.99,
+      0.45,
+      6.99
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      -48.0,
+      10,
+      -30.0
+    ]
+  },
+  "122": {
+    "id": 122,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Y-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -45.46,
+      107.22,
+      -45.46
+    ],
+    "size": [
+      6.99,
+      0.45,
+      6.99
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      -48.0,
+      10,
+      -30.0
+    ]
+  },
+  "123": {
+    "id": 123,
+    "subsystem": "actuators",
+    "name": "Actuator Foot (Y-Axis)",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "Lower anchor foot holding Viton band under constant elastic tension.",
+    "center": [
+      -45.46,
+      68.25,
+      -45.46
+    ],
+    "size": [
+      24.66,
+      16.5,
+      24.66
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      -24.0,
+      -65,
+      -15.0
+    ]
+  },
+  "124": {
+    "id": 124,
+    "subsystem": "actuators",
+    "name": "Viton Elastic Preload Band (Y-Axis)",
+    "material": "Viton Fluoroelastomer",
+    "kinematic_role": "Eliminates backlash by providing continuous downward preload against leadscrew.",
+    "center": [
+      -45.46,
+      81.75,
+      -45.46
+    ],
+    "size": [
+      17.56,
+      39.5,
+      17.56
+    ],
+    "color": [
+      0.5,
+      0.5,
+      0.5,
+      1.0
+    ],
+    "vec": [
+      -32.0,
+      -20,
+      -20.0
+    ]
+  },
+  "125": {
+    "id": 125,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      0.0,
+      94.2,
+      -66.67
+    ],
+    "size": [
+      5.54,
+      4.81,
+      6.82
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "126": {
+    "id": 126,
+    "subsystem": "actuators",
+    "name": "M3x25mm Stainless Leadscrew Bolt (Z-Axis)",
+    "material": "A2 Stainless Steel (DIN 933)",
+    "kinematic_role": "Precision leadscrew translating rotary motion into axial flexure displacement.",
+    "center": [
+      0.0,
+      94.52,
+      -67.35
+    ],
+    "size": [
+      6.4,
+      26.38,
+      14.82
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -55,
+      -45.0
+    ]
+  },
+  "127": {
+    "id": 127,
+    "subsystem": "actuators",
+    "name": "Large Actuator Gear Thumbwheel (Z-Axis)",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "Compound gear providing ~2:1 reduction and housing M3 captive drive nut.",
+    "center": [
+      0.0,
+      106.64,
+      -72.62
+    ],
+    "size": [
+      28.89,
+      16.05,
+      27.53
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -40,
+      -45.0
+    ]
+  },
+  "128": {
+    "id": 128,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      0.0,
+      103.02,
+      -70.64
+    ],
+    "size": [
+      7.0,
+      3.28,
+      6.57
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "129": {
+    "id": 129,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      0.0,
+      102.56,
+      -70.43
+    ],
+    "size": [
+      7.0,
+      3.28,
+      6.57
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "130": {
+    "id": 130,
+    "subsystem": "actuators",
+    "name": "Actuator Foot (Z-Axis)",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "Lower anchor foot holding Viton band under constant elastic tension.",
+    "center": [
+      0.0,
+      69.1,
+      -56.53
+    ],
+    "size": [
+      28.2,
+      14.79,
+      20.69
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -65,
+      -27.0
+    ]
+  },
+  "131": {
+    "id": 131,
+    "subsystem": "actuators",
+    "name": "Viton Elastic Preload Band (Z-Axis)",
+    "material": "Viton Fluoroelastomer",
+    "kinematic_role": "Eliminates backlash by providing continuous downward preload against leadscrew.",
+    "center": [
+      0.0,
+      82.63,
+      -61.95
+    ],
+    "size": [
+      16.0,
+      36.96,
+      20.8
+    ],
+    "color": [
+      0.5,
+      0.5,
+      0.5,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -20,
+      -36.0
+    ]
+  },
+  "132": {
+    "id": 132,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Y-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -41.57,
+      114.84,
+      -66.32
+    ],
+    "size": [
+      6.18,
+      2.4,
+      6.18
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      -48.0,
+      10,
+      -30.0
+    ]
+  },
+  "133": {
+    "id": 133,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Y-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -66.32,
+      114.84,
+      -41.57
+    ],
+    "size": [
+      6.18,
+      2.4,
+      6.18
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      -48.0,
+      10,
+      -30.0
+    ]
+  },
+  "134": {
+    "id": 134,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (X-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      41.57,
+      114.84,
+      -66.32
+    ],
+    "size": [
+      6.18,
+      2.4,
+      6.18
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      48.0,
+      10,
+      -30.0
+    ]
+  },
+  "135": {
+    "id": 135,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (X-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      66.32,
+      114.84,
+      -41.57
+    ],
+    "size": [
+      6.18,
+      2.4,
+      6.18
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      48.0,
+      10,
+      -30.0
+    ]
+  },
+  "136": {
+    "id": 136,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      17.5,
+      113.78,
+      -62.32
+    ],
+    "size": [
+      6.4,
+      4.46,
+      6.04
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "137": {
+    "id": 137,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -17.5,
+      113.78,
+      -62.32
+    ],
+    "size": [
+      6.4,
+      4.46,
+      6.04
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "138": {
+    "id": 138,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      -20.0,
+      133.3,
+      -58.03
+    ],
+    "size": [
+      6.3,
+      2.4,
+      6.01
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "139": {
+    "id": 139,
+    "subsystem": "actuators",
+    "name": "Actuator Fasteners / Hardware (Z-Axis)",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Fastener securing actuator assembly and gear trains.",
+    "center": [
+      20.0,
+      133.3,
+      -58.03
+    ],
+    "size": [
+      6.3,
+      2.4,
+      6.01
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0.0,
+      -10,
+      -54.0
+    ]
+  },
+  "140": {
+    "id": 140,
+    "subsystem": "stage_body",
+    "name": "Stage Structural Fastener",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Secures stage flexure blocks and stops.",
+    "center": [
+      -17.32,
+      144.55,
+      -17.32
+    ],
+    "size": [
+      6.18,
+      2.4,
+      6.18
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      -5.2,
+      30,
+      -5.2
+    ]
+  },
+  "141": {
+    "id": 141,
+    "subsystem": "stage_body",
+    "name": "Stage Structural Fastener",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Secures stage flexure blocks and stops.",
+    "center": [
+      -17.32,
+      144.55,
+      17.32
+    ],
+    "size": [
+      6.18,
+      2.4,
+      6.18
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      -5.2,
+      30,
+      5.2
+    ]
+  },
+  "142": {
+    "id": 142,
+    "subsystem": "stage_body",
+    "name": "Stage Structural Fastener",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Secures stage flexure blocks and stops.",
+    "center": [
+      17.32,
+      144.55,
+      17.32
+    ],
+    "size": [
+      6.18,
+      2.4,
+      6.18
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      5.2,
+      30,
+      5.2
+    ]
+  },
+  "143": {
+    "id": 143,
+    "subsystem": "stage_body",
+    "name": "Stage Structural Fastener",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Secures stage flexure blocks and stops.",
+    "center": [
+      17.32,
+      144.55,
+      -17.32
+    ],
+    "size": [
+      6.18,
+      2.4,
+      6.18
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      5.2,
+      30,
+      -5.2
+    ]
+  },
+  "144": {
+    "id": 144,
+    "subsystem": "stage_body",
+    "name": "Monolithic Flexure Stage & Main Body",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "Single-piece printed structure featuring 3-axis parallelogram flexure hinges for friction-free sub-micron motion.",
+    "center": [
+      0.0,
+      112.5,
+      -23.03
+    ],
+    "size": [
+      142.92,
+      75.0,
+      116.07
+    ],
+    "color": [
+      0.96,
+      0.96,
+      0.96,
+      1.0
+    ],
+    "vec": [
+      0,
+      0,
+      0
+    ]
+  },
+  "145": {
+    "id": 145,
+    "subsystem": "stage_body",
+    "name": "Sample Slide Tension Clip",
+    "material": "PLA 3D-Printed / Stainless Screw",
+    "kinematic_role": "Cantilever spring clip holding standard 75x25mm microscope slide firmly to stage.",
+    "center": [
+      19.17,
+      159.0,
+      -10.44
+    ],
+    "size": [
+      15.37,
+      20.0,
+      33.93
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      9.58,
+      45,
+      -5.22
+    ]
+  },
+  "146": {
+    "id": 146,
+    "subsystem": "stage_body",
+    "name": "Stage Structural Fastener",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Secures stage flexure blocks and stops.",
+    "center": [
+      17.32,
+      149.0,
+      -17.32
+    ],
+    "size": [
+      5.49,
+      13.0,
+      5.49
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      5.2,
+      30,
+      -5.2
+    ]
+  },
+  "147": {
+    "id": 147,
+    "subsystem": "stage_body",
+    "name": "Sample Slide Tension Clip",
+    "material": "PLA 3D-Printed / Stainless Screw",
+    "kinematic_role": "Cantilever spring clip holding standard 75x25mm microscope slide firmly to stage.",
+    "center": [
+      -19.17,
+      159.0,
+      -10.44
+    ],
+    "size": [
+      15.37,
+      20.0,
+      33.93
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      -9.58,
+      45,
+      -5.22
+    ]
+  },
+  "148": {
+    "id": 148,
+    "subsystem": "stage_body",
+    "name": "Stage Structural Fastener",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Secures stage flexure blocks and stops.",
+    "center": [
+      -17.32,
+      149.0,
+      -17.32
+    ],
+    "size": [
+      5.49,
+      13.0,
+      5.49
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      -5.2,
+      30,
+      -5.2
+    ]
+  },
+  "149": {
+    "id": 149,
+    "subsystem": "base_electronics",
+    "name": "Electronics Slide Drawer",
+    "material": "PLA 3D-Printed",
+    "kinematic_role": "Sliding chassis allowing easy extraction of Raspberry Pi and motor controller.",
+    "center": [
+      33.04,
+      25.5,
+      -21.43
+    ],
+    "size": [
+      99.7,
+      47.0,
+      119.72
+    ],
+    "color": [
+      0.96,
+      0.96,
+      0.96,
+      1.0
+    ],
+    "vec": [
+      0,
+      -70,
+      -70
+    ]
+  },
+  "150": {
+    "id": 150,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      33.04,
+      8.25,
+      -21.25
+    ],
+    "size": [
+      90.0,
+      1.5,
+      100.19
+    ],
+    "color": [
+      0.0,
+      0.5,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "151": {
+    "id": 151,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      27.94,
+      8.25,
+      -12.64
+    ],
+    "size": [
+      77.71,
+      1.5,
+      80.87
+    ],
+    "color": [
+      0.74,
+      0.72,
+      0.42,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "152": {
+    "id": 152,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      13.05,
+      11.25,
+      12.53
+    ],
+    "size": [
+      19.35,
+      5.5,
+      12.85
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "153": {
+    "id": 153,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      13.05,
+      11.0,
+      12.53
+    ],
+    "size": [
+      17.63,
+      4.0,
+      11.83
+    ],
+    "color": [
+      0.82,
+      0.71,
+      0.55,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "154": {
+    "id": 154,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      49.58,
+      11.25,
+      -15.82
+    ],
+    "size": [
+      19.35,
+      5.5,
+      12.85
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "155": {
+    "id": 155,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      49.58,
+      11.0,
+      -15.82
+    ],
+    "size": [
+      17.63,
+      4.0,
+      11.83
+    ],
+    "color": [
+      0.82,
+      0.71,
+      0.55,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "156": {
+    "id": 156,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      39.58,
+      10.5,
+      18.99
+    ],
+    "size": [
+      10.4,
+      3.0,
+      10.63
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "157": {
+    "id": 157,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      39.26,
+      10.5,
+      18.66
+    ],
+    "size": [
+      9.51,
+      2.0,
+      9.26
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "158": {
+    "id": 158,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      46.82,
+      10.75,
+      6.08
+    ],
+    "size": [
+      10.49,
+      3.5,
+      10.12
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "159": {
+    "id": 159,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      46.33,
+      10.75,
+      5.51
+    ],
+    "size": [
+      6.85,
+      2.5,
+      6.85
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "160": {
+    "id": 160,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      53.69,
+      10.75,
+      -5.54
+    ],
+    "size": [
+      10.49,
+      3.5,
+      10.12
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "161": {
+    "id": 161,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      53.2,
+      10.75,
+      -6.11
+    ],
+    "size": [
+      6.85,
+      2.5,
+      6.85
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "162": {
+    "id": 162,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      58.77,
+      12.5,
+      -19.52
+    ],
+    "size": [
+      15.79,
+      6.0,
+      12.98
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "163": {
+    "id": 163,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      68.53,
+      15.75,
+      -43.46
+    ],
+    "size": [
+      20.96,
+      19.5,
+      22.19
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "164": {
+    "id": 164,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      68.48,
+      18.75,
+      -43.85
+    ],
+    "size": [
+      17.11,
+      9.5,
+      18.51
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "165": {
+    "id": 165,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      53.04,
+      15.75,
+      -52.62
+    ],
+    "size": [
+      20.96,
+      19.5,
+      22.19
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "166": {
+    "id": 166,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      52.99,
+      18.75,
+      -53.01
+    ],
+    "size": [
+      17.11,
+      9.5,
+      18.51
+    ],
+    "color": [
+      0.12,
+      0.56,
+      1.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "167": {
+    "id": 167,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      35.37,
+      15.65,
+      -60.54
+    ],
+    "size": [
+      24.46,
+      13.3,
+      26.22
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "168": {
+    "id": 168,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      37.4,
+      14.85,
+      -63.98
+    ],
+    "size": [
+      17.38,
+      10.2,
+      17.55
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "169": {
+    "id": 169,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      44.8,
+      11.75,
+      -67.15
+    ],
+    "size": [
+      2.63,
+      1.5,
+      1.61
+    ],
+    "color": [
+      0.0,
+      0.5,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "170": {
+    "id": 170,
+    "subsystem": "base_electronics",
+    "name": "Raspberry Pi 4 Model B",
+    "material": "FR4 PCB / Broadcom SoC",
+    "kinematic_role": "Single-board computer hosting OpenFlexure server, camera ISP, and web UI.",
+    "center": [
+      36.63,
+      11.75,
+      -71.99
+    ],
+    "size": [
+      2.63,
+      1.5,
+      1.61
+    ],
+    "color": [
+      1.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -75,
+      -40
+    ]
+  },
+  "171": {
+    "id": 171,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      -5.9,
+      10.15,
+      -4.54
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "172": {
+    "id": 172,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      -5.9,
+      11.75,
+      -4.54
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "173": {
+    "id": 173,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      -4.6,
+      10.15,
+      -6.73
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "174": {
+    "id": 174,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      -4.6,
+      11.75,
+      -6.73
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "175": {
+    "id": 175,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      -3.31,
+      10.15,
+      -8.92
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "176": {
+    "id": 176,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      -3.31,
+      11.75,
+      -8.92
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "177": {
+    "id": 177,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      -2.02,
+      10.15,
+      -11.1
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "178": {
+    "id": 178,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      -2.02,
+      11.75,
+      -11.1
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "179": {
+    "id": 179,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      -0.72,
+      10.15,
+      -13.29
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "180": {
+    "id": 180,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      -0.72,
+      11.75,
+      -13.29
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "181": {
+    "id": 181,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      0.57,
+      10.15,
+      -15.47
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "182": {
+    "id": 182,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      0.57,
+      11.75,
+      -15.47
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "183": {
+    "id": 183,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      1.86,
+      10.15,
+      -17.66
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "184": {
+    "id": 184,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      1.86,
+      11.75,
+      -17.66
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "185": {
+    "id": 185,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      3.16,
+      10.15,
+      -19.85
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "186": {
+    "id": 186,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      3.16,
+      11.75,
+      -19.85
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "187": {
+    "id": 187,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      4.45,
+      10.15,
+      -22.03
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "188": {
+    "id": 188,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      4.45,
+      11.75,
+      -22.03
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "189": {
+    "id": 189,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      5.75,
+      10.15,
+      -24.22
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "190": {
+    "id": 190,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      5.75,
+      11.75,
+      -24.22
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "191": {
+    "id": 191,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      7.04,
+      10.15,
+      -26.4
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "192": {
+    "id": 192,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      7.04,
+      11.75,
+      -26.4
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "193": {
+    "id": 193,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      8.33,
+      10.15,
+      -28.59
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "194": {
+    "id": 194,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      8.33,
+      11.75,
+      -28.59
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "195": {
+    "id": 195,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      9.63,
+      10.15,
+      -30.78
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "196": {
+    "id": 196,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      9.63,
+      11.75,
+      -30.78
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "197": {
+    "id": 197,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      10.92,
+      10.15,
+      -32.96
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "198": {
+    "id": 198,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      10.92,
+      11.75,
+      -32.96
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "199": {
+    "id": 199,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      12.21,
+      10.15,
+      -35.15
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "200": {
+    "id": 200,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      12.21,
+      11.75,
+      -35.15
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "201": {
+    "id": 201,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      13.51,
+      10.15,
+      -37.33
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "202": {
+    "id": 202,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      13.51,
+      11.75,
+      -37.33
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "203": {
+    "id": 203,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      14.8,
+      10.15,
+      -39.52
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "204": {
+    "id": 204,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      14.8,
+      11.75,
+      -39.52
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "205": {
+    "id": 205,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      16.09,
+      10.15,
+      -41.71
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "206": {
+    "id": 206,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      16.09,
+      11.75,
+      -41.71
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "207": {
+    "id": 207,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      17.39,
+      10.15,
+      -43.89
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "208": {
+    "id": 208,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      17.39,
+      11.75,
+      -43.89
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "209": {
+    "id": 209,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      18.68,
+      10.15,
+      -46.08
+    ],
+    "size": [
+      4.95,
+      2.3,
+      3.64
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "210": {
+    "id": 210,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      18.68,
+      11.75,
+      -46.08
+    ],
+    "size": [
+      3.01,
+      11.5,
+      2.12
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "211": {
+    "id": 211,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      27.82,
+      10.15,
+      -46.41
+    ],
+    "size": [
+      3.64,
+      2.3,
+      4.95
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "212": {
+    "id": 212,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      27.82,
+      11.75,
+      -46.41
+    ],
+    "size": [
+      2.12,
+      11.5,
+      3.01
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "213": {
+    "id": 213,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      25.64,
+      10.15,
+      -47.7
+    ],
+    "size": [
+      3.64,
+      2.3,
+      4.95
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "214": {
+    "id": 214,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      25.64,
+      11.75,
+      -47.7
+    ],
+    "size": [
+      2.12,
+      11.5,
+      3.01
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "215": {
+    "id": 215,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      15.03,
+      6.75,
+      9.18
+    ],
+    "size": [
+      16.08,
+      1.5,
+      15.84
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "216": {
+    "id": 216,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      5.46,
+      9.5,
+      -2.13
+    ],
+    "size": [
+      16.64,
+      1.0,
+      15.83
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "217": {
+    "id": 217,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      22.29,
+      9.5,
+      -11.92
+    ],
+    "size": [
+      20.55,
+      1.0,
+      20.55
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "218": {
+    "id": 218,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      22.29,
+      9.75,
+      -11.92
+    ],
+    "size": [
+      17.81,
+      1.5,
+      17.81
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "219": {
+    "id": 219,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      29.93,
+      9.75,
+      -24.83
+    ],
+    "size": [
+      18.0,
+      1.5,
+      16.24
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "220": {
+    "id": 220,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      45.39,
+      9.25,
+      -34.27
+    ],
+    "size": [
+      10.96,
+      0.5,
+      10.96
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "221": {
+    "id": 221,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      32.83,
+      9.25,
+      -40.54
+    ],
+    "size": [
+      8.22,
+      0.5,
+      8.22
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "222": {
+    "id": 222,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      41.11,
+      10.0,
+      -46.68
+    ],
+    "size": [
+      7.81,
+      2.0,
+      6.58
+    ],
+    "color": [
+      0.25,
+      0.25,
+      0.25,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "223": {
+    "id": 223,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      13.94,
+      6.5,
+      11.36
+    ],
+    "size": [
+      16.5,
+      1.0,
+      17.24
+    ],
+    "color": [
+      0.41,
+      0.41,
+      0.41,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "224": {
+    "id": 224,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      15.36,
+      6.34,
+      11.26
+    ],
+    "size": [
+      7.81,
+      0.1,
+      10.12
+    ],
+    "color": [
+      0.96,
+      0.96,
+      0.96,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "225": {
+    "id": 225,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      17.02,
+      7.0,
+      7.1
+    ],
+    "size": [
+      8.71,
+      0.1,
+      6.77
+    ],
+    "color": [
+      1.0,
+      0.84,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "226": {
+    "id": 226,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      -7.91,
+      6.1,
+      -0.16
+    ],
+    "size": [
+      4.2,
+      8.2,
+      4.2
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "227": {
+    "id": 227,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      21.63,
+      6.1,
+      -50.08
+    ],
+    "size": [
+      4.2,
+      8.2,
+      4.2
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "228": {
+    "id": 228,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      25.17,
+      25.65,
+      -4.12
+    ],
+    "size": [
+      61.81,
+      9.9,
+      56.16
+    ],
+    "color": [
+      0.82,
+      0.82,
+      0.78,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "229": {
+    "id": 229,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      28.17,
+      24.49,
+      -2.18
+    ],
+    "size": [
+      39.21,
+      0.75,
+      51.73
+    ],
+    "color": [
+      0.38,
+      0.27,
+      0.22,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "230": {
+    "id": 230,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      27.68,
+      23.3,
+      -14.65
+    ],
+    "size": [
+      71.76,
+      15.6,
+      70.62
+    ],
+    "color": [
+      0.15,
+      0.15,
+      0.15,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "231": {
+    "id": 231,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      19.12,
+      25.38,
+      -12.48
+    ],
+    "size": [
+      49.45,
+      1.55,
+      36.46
+    ],
+    "color": [
+      0.69,
+      0.66,
+      0.6,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "232": {
+    "id": 232,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      26.48,
+      27.6,
+      -5.64
+    ],
+    "size": [
+      59.91,
+      7.0,
+      53.06
+    ],
+    "color": [
+      0.89,
+      0.89,
+      0.81,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "233": {
+    "id": 233,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      26.09,
+      24.56,
+      -5.77
+    ],
+    "size": [
+      58.95,
+      0.28,
+      52.55
+    ],
+    "color": [
+      0.08,
+      0.09,
+      0.09,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "234": {
+    "id": 234,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      30.9,
+      25.3,
+      -1.54
+    ],
+    "size": [
+      29.69,
+      3.59,
+      48.86
+    ],
+    "color": [
+      0.27,
+      0.27,
+      0.27,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "235": {
+    "id": 235,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      27.8,
+      24.62,
+      -13.47
+    ],
+    "size": [
+      69.17,
+      16.04,
+      70.65
+    ],
+    "color": [
+      0.86,
+      0.74,
+      0.49,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "236": {
+    "id": 236,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      11.54,
+      24.3,
+      -21.71
+    ],
+    "size": [
+      3.93,
+      0.4,
+      3.68
+    ],
+    "color": [
+      0.16,
+      0.16,
+      0.16,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "237": {
+    "id": 237,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      4.85,
+      24.72,
+      -0.47
+    ],
+    "size": [
+      7.14,
+      1.23,
+      15.19
+    ],
+    "color": [
+      0.37,
+      0.37,
+      0.37,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "238": {
+    "id": 238,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      4.85,
+      25.49,
+      -0.47
+    ],
+    "size": [
+      3.57,
+      0.3,
+      11.62
+    ],
+    "color": [
+      0.71,
+      0.43,
+      0.18,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "239": {
+    "id": 239,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      27.8,
+      23.3,
+      -12.82
+    ],
+    "size": [
+      79.5,
+      1.58,
+      82.49
+    ],
+    "color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "240": {
+    "id": 240,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      27.96,
+      23.3,
+      -13.28
+    ],
+    "size": [
+      77.1,
+      1.6,
+      81.49
+    ],
+    "color": [
+      0.75,
+      0.61,
+      0.23,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "241": {
+    "id": 241,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      25.21,
+      23.3,
+      -4.06
+    ],
+    "size": [
+      62.36,
+      1.62,
+      56.68
+    ],
+    "color": [
+      0.5,
+      0.5,
+      0.5,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "242": {
+    "id": 242,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      27.8,
+      23.3,
+      -12.82
+    ],
+    "size": [
+      79.5,
+      1.62,
+      82.49
+    ],
+    "color": [
+      0.13,
+      0.01,
+      0.21,
+      0.83
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "243": {
+    "id": 243,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      27.43,
+      23.3,
+      -13.33
+    ],
+    "size": [
+      74.2,
+      1.75,
+      75.29
+    ],
+    "color": [
+      0.96,
+      0.96,
+      0.96,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "244": {
+    "id": 244,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      6.87,
+      16.5,
+      -25.22
+    ],
+    "size": [
+      30.24,
+      10.0,
+      46.31
+    ],
+    "color": [
+      0.15,
+      0.15,
+      0.15,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "245": {
+    "id": 245,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      34.26,
+      21.6,
+      24.79
+    ],
+    "size": [
+      4.2,
+      8.2,
+      4.2
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "246": {
+    "id": 246,
+    "subsystem": "base_electronics",
+    "name": "Sangaboard v0.5 Motor Controller",
+    "material": "FR4 PCB / RP2040 Microcontroller",
+    "kinematic_role": "Dedicated USB/I2C stepper controller driving three 28BYJ-48 stepper motors.",
+    "center": [
+      63.8,
+      21.6,
+      -25.13
+    ],
+    "size": [
+      4.2,
+      8.2,
+      4.2
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      20,
+      -75,
+      -60
+    ]
+  },
+  "247": {
+    "id": 247,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      35.99,
+      37.0,
+      34.96
+    ],
+    "size": [
+      13.21,
+      5.5,
+      10.04
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  },
+  "248": {
+    "id": 248,
+    "subsystem": "base_electronics",
+    "name": "Base Mounting Hardware / Standoff",
+    "material": "A2 Stainless Steel",
+    "kinematic_role": "Mechanical fastener securing base drawer and chassis components.",
+    "center": [
+      19.67,
+      7.0,
+      -70.6
+    ],
+    "size": [
+      10.04,
+      5.5,
+      13.21
+    ],
+    "color": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "vec": [
+      0,
+      -50,
+      0
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+Authors:
+    - Richard Bowman
+    - Julian Stirling
+Affiliation: The Openflexure Community
+Email: "contact@openflexure.org"
+License: CERN-OHL-S-2.0
+CustomCategories:
+    PrintedPart:
+        Reuse: false
+        DisplayName: Printed Parts
+    PrintedTool:
+        Reuse: true
+        DisplayName: Printed Tools
+    SubAssembly:
+        Reuse: false
+        DisplayName: Sub-Assemblies
+    Material:
+        Reuse: false
+        DisplayName: Materials
+    Consumable:
+        Reuse: false
+        DisplayName: Consumables
+    Optical:
+        Reuse: false
+        DisplayName: Optical Components
+    Electronic:
+        Reuse: false
+        DisplayName: Electronic Components
+    Mech:
+        Reuse: false
+        DisplayName: Mechanical Components
+DefaultCategory: Part
+PageBOMTitle: "## For this section you will need:"
+#uncomment line below to disable fussy warnings
+#Fussy: False
+ForceOutput:
+  - models/*.stl
+Navigation:
+  - Link: high_res_microscope.md
+    Title: Build the high-resolution microscope
+  - Link: low_cost_microscope.md
+    Title: Build the low-cost microscope
+  - Link: upright_microscope.md
+    Title: Build the upright microscope
+  - Link: manual_microscope.md
+    Title: Build the manual microscope
+  - Link: customisation.md
+    Title: Customisations and alternatives
+  - Link: accessories.md
+    Title: Accessories and foot prints
+  - Link: troubleshooting.md
+    Title: Troubleshooting
+  - Link: knowledge_base.md
+    Title: Knowledge base

@@ -1,0 +1,379 @@
+.fewer_rules_common:
+  rules:
+    - if: $CI_COMMIT_TAG
+    - if: $CI_PIPELINE_SOURCE == "web"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - when: never
+
+.rules_common:
+  rules:
+      # Add new rule first as the rules defined in .fewer_rules_common
+      # end in when: never, so if this new rule goes after that
+      # clause, it will never be reached as rules are
+      # evaluated top to bottom
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      # This syntax means we append the rules from the .fewer_rules_common
+      # job to this job, instead of overwriting them by creating
+      # this new rules section
+    - !reference [.fewer_rules_common, rules]
+
+stages:
+    - .pre
+    - test
+    - build
+    - analyse
+    - build-docs
+    - deploy
+
+version:
+    stage: .pre
+    extends: .rules_common
+    image: python:3.12
+    script:
+      # show any files that claim to be modified for debugging purposes
+      - git status
+      # Some files seem to appear changed even though they shouldn't be which
+      # messes up our auto version-string embeddeding, so we do a hard git reset
+      # see https://gitlab.com/gitlab-org/gitlab/-/issues/325299
+      - git reset --hard
+      # Write the version string into build.env
+      - ./ci_version_string.py
+    artifacts:
+      reports:
+        dotenv: build.env
+
+## Template for all OpenSCAD jobs to ensure they run the same
+.scad-job:
+    image: registry.gitlab.com/openflexure/openflexure-microscope/scad-job
+
+# Old template for all OpenSCAD jobs, this is kept in case we want to stop using the
+# container registry
+.legacy-scad-job:
+    image: ubuntu:22.04
+
+    variables:
+      # prevents config waiting for user input, e.g. for tzdata
+      DEBIAN_FRONTEND: noninteractive
+      DEBCONF_NONINTERACTIVE_SEEN: "true"
+
+    # Install everything needed for all OpenSCAD jobs so they run in a consistent environment
+    before_script:
+      - apt-get update -qq
+      - apt-get -o DPkg::Options::=--force-confdef -y -qq install software-properties-common dirmngr apt-transport-https lsb-release ca-certificates python3-pip python-is-python3 git xvfb imagemagick unzip inkscape wget
+      - wget http://archive.ubuntu.com/ubuntu/pool/universe/o/openscad/openscad_2021.01-4build1_amd64.deb -O /tmp/openscad_2021.01-4build1_amd64.deb
+      - apt -o DPkg::Options::=--force-confdef -y -qq install /tmp/openscad_2021.01-4build1_amd64.deb
+      - pip3 install -r requirements.txt
+
+# Unit testing of the scad library functions
+scad-lib-tests:
+    extends:
+      - .scad-job
+      - .rules_common
+    stage: test
+
+    script:
+      - openscad/libs/test/test_dict.py
+
+# Run SCA2D to do static analysis of the .scad code and build docs for the OpenSCAD API
+sca2d:
+    extends:
+      - .scad-job
+      - .rules_common
+    stage: test
+    allow_failure: true
+    script:
+      - pip install "sca2d~=0.3.0"
+      # Ignoring missing docstrings for now as there are so many (I4001,I4002,I4003)
+      - xvfb-run --auto-servernum --server-args "-screen 0 1024x768x24" sca2d --docs --project="OpenFlexure Microscope" --colour --gitlab-report --ignore=I4001,I4002,I4003 openscad/
+    artifacts:
+      paths:
+        - scad_docs/
+      reports:
+        codequality:
+          - gl-code-quality-report.json
+      expire_in: 1 week
+      name: "${CI_PROJECT_NAME}-${CI_JOB_NAME}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHORT_SHA}"
+    # Note this runs more often than others, this is to make sure that the result
+    # both the head and base of merge requests have code quality reports to allow the
+    # MR quality changes to display
+    rules:
+      # Add new rule first as the rules defined in .rules_common
+      # end in when: never, so if this new rule goes after that
+      # clause, it will never be reached as rules are
+      # evaluated top to bottom
+      - if: $CI_COMMIT_BRANCH # any branch (includes master)
+      # This syntax means we append the rules from the .rules_common
+      # job to this job, instead of overwriting them by creating
+      # this new rules section
+      - !reference [.rules_common, rules]
+
+
+lint_build_system:
+    stage: test
+    extends: .rules_common
+    image: python:3.12
+    script:
+      - pip install -r requirements.txt
+      - ./lint_build_system.py
+      - pip install pytest
+      - cd build_system
+      - pytest
+
+# Build STL files
+build:
+    extends:
+      - .scad-job
+      - .rules_common
+    stage: build
+    dependencies: ["version"]
+    needs: ["version"]
+
+    script:
+      - git clone --depth=1 https://gitlab.com/openflexure/openflexure-microscope-extra
+      # Build STL files with OpenSCAD
+      - mkdir -p /root/.local/share
+      - ./build.py --include-extra-files --force-clean
+      - python3 -m build_system.hash_csg_files docs/models -o docs/models/dependency_hashes.yaml
+      - ./archive_stls.py
+    
+    cache:
+      - key: "$CI_JOB_NAME-$CI_COMMIT_REF_SLUG"
+        paths:
+          - docs/models/**/*.stl
+          - docs/models/**/*.svg
+          - docs/models/dependency_hashes.yaml
+
+    artifacts:
+      expire_in: 1 week
+      name: "${CI_PROJECT_NAME}-${CI_JOB_NAME}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHORT_SHA}"
+      paths:
+        - docs/models/**/*.stl
+        - docs/models/**/*.svg
+        - docs/all-stls.zip
+        - docs/models/*.yaml
+
+archive-source:
+    stage: build
+    extends: .rules_common
+    image: python:3.12
+
+    script:
+      - git clean -dfX
+      - rm -rf .git
+      - python3 -c "import shutil; shutil.make_archive('/tmp/source', 'zip', '.')"
+      - mv /tmp/source.zip docs/
+
+    artifacts:
+      expire_in: 1 week
+      name: "${CI_PROJECT_NAME}-${CI_JOB_NAME}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHORT_SHA}"
+      paths:
+        - docs/source.zip
+
+check_stls:
+    stage: analyse
+    extends: .rules_common
+    # This is Python 3.7 still as admesh is not compiled for newer python
+    image: python:3.7
+    needs: ["build"]
+    dependencies: ["build"]
+    allow_failure: true
+    variables:
+      # prevents config waiting for user input, e.g. for tzdata
+      DEBIAN_FRONTEND: noninteractive
+      DEBCONF_NONINTERACTIVE_SEEN: "true"
+    before_script:
+      - apt-get update -qq
+      - apt-get -o DPkg::Options::=--force-confdef -y -qq install admesh
+    script:
+      - pip install colorama==0.4.3
+      - pip install admesh==0.98.9
+      - ./check_stls.py docs/models/
+    artifacts:
+      when: always
+      reports:
+        junit: admesh_report.xml
+
+compare_dependency_hashes:
+  stage: analyse
+  image: python:3.12
+  needs: ["build"]
+  dependencies: ["build"]
+  rules:
+    - if: '$CI_MERGE_REQUEST_IID'
+  variables:
+    # prevents config waiting for user input, e.g. for tzdata
+    DEBIAN_FRONTEND: noninteractive
+    DEBCONF_NONINTERACTIVE_SEEN: "true"
+  before_script:
+    - apt-get update -qq
+    - apt-get -o DPkg::Options::=--force-confdef -y -qq install jq
+    - pip install pyyaml
+  script:
+    # Use -| syntax as YAML kept interpreting certain lines. Note that the Project ID is hard coded to 12049246 so that all
+    # forks compare to the canonical project.
+    - |
+      # Fetch latest successful pipeline on master
+      MASTER_PIPELINES=$(curl --silent --header "PRIVATE-TOKEN: $CI_JOB_TOKEN" "$CI_API_V4_URL/projects/12049246/pipelines?ref=master&status=success")
+      MASTER_PIPELINE_ID=$(echo "$MASTER_PIPELINES" | jq '.[0].id')
+
+      # Get build job ID from that pipeline
+      MASTER_JOBS=$(curl --silent --header "PRIVATE-TOKEN: $CI_JOB_TOKEN" "$CI_API_V4_URL/projects/12049246/pipelines/$MASTER_PIPELINE_ID/jobs")
+      MASTER_JOB_ID=$(echo "$MASTER_JOBS" | jq '.[] | select(.name=="build") | .id')
+
+      # Download and unzip master artifacts (--location follows redirects)
+      curl --silent --header "PRIVATE-TOKEN: $CI_JOB_TOKEN" "$CI_API_V4_URL/projects/12049246/jobs/$MASTER_JOB_ID/artifacts" --location --output master_artifacts.zip
+      unzip -o master_artifacts.zip -d master_artifacts
+
+      ./compare_hashes.py docs/models/dependency_hashes.yaml master_artifacts/docs/models/dependency_hashes.yaml
+  artifacts:
+    reports:
+      metrics: stl_changes.txt
+    when: always
+
+prebuild-for-render:
+    extends:
+      - .scad-job
+      - .rules_common
+    stage: build
+    dependencies: ["version"]
+    needs: ["version"]
+
+    script:
+      - ./render.py --force-clean --stl-only
+
+    artifacts:
+      expire_in: 1 week
+      name: "${CI_PROJECT_NAME}-${CI_JOB_NAME}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHORT_SHA}-renders"
+      # saving any rendering csg files. Only remaining files should be when scad2gltf fails
+      paths:
+        - rendering/librender/*.stl
+
+# render assemblies - uses xvfb as a virtual x-server
+render:
+    extends:
+      - .scad-job
+      - .rules_common
+    stage: build
+    dependencies: ["prebuild-for-render", "version"]
+    needs: ["prebuild-for-render", "version"]
+
+    script:
+      - xvfb-run --auto-servernum --server-args "-screen 0 1024x768x24" ./render.py --force-clean --png-only
+
+    artifacts:
+      expire_in: 1 week
+      name: "${CI_PROJECT_NAME}-${CI_JOB_NAME}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHORT_SHA}-renders"
+      # saving any rendering csg files. Only remaining files should be when scad2gltf fails
+      paths:
+        - docs/renders/*.png
+
+gltf:
+    extends:
+      - .scad-job
+      - .rules_common
+    stage: build
+    dependencies: ["prebuild-for-render", "version"]
+    needs: ["prebuild-for-render", "version"]
+
+    script:
+      - mkdir -p docs/gltf
+      - pip install scad2gltf
+      - cd rendering
+      - scad2gltf complete_microscope_rms.scad
+      - scad2gltf complete_microscope_low_cost.scad
+      - scad2gltf complete_microscope_upright.scad
+      - scad2gltf complete_microscope_manual.scad
+      - cp complete_microscope_*.glb ../docs/gltf/
+
+    artifacts:
+      expire_in: 1 week
+      name: "${CI_PROJECT_NAME}-${CI_JOB_NAME}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHORT_SHA}-renders"
+      # saving any rendering csg files. Only remaining files should be when scad2gltf fails
+      paths:
+        - docs/gltf/*
+
+# Build docs- this is at a later stage so it has access to the models
+build-docs:
+    stage: build-docs
+    extends: .rules_common
+    dependencies:
+      - build
+      - render
+      - gltf
+      - archive-source
+      - sca2d
+    needs: ["build", "render", "gltf", "archive-source", "sca2d"]
+    image: "python:3.12"
+
+    before_script:
+      - python --version
+      #This can be removed onece we update to GitBuilding 0.15
+      - pip install setuptools
+      - pip install "gitbuilding>=0.14.0"
+
+    script:
+      - cd docs
+      # The .yaml extension confuses gitbuilding, for now I'll just gzip it to get around that.
+      - gzip models/dependency_hashes.yaml
+      - gitbuilding build-html --hardwarnings
+      - cd ..
+      - cp -r scad_docs/ docs/_site/
+      - rm -r docs/_site/scad_docs/_examples/
+      - mv docs/_site builds
+      - echo "JOB_ID=$CI_JOB_ID" > build-docs.env
+
+    artifacts:
+      expire_in: 1 week
+      name: "${CI_PROJECT_NAME}-${CI_JOB_NAME}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHORT_SHA}-docs"
+      paths:
+        - builds/
+      reports:
+        dotenv: build-docs.env
+
+    # This exposes a link to the built docs.  The mechanism is intended to support deployment to an 
+    # external server, but I don't think that should be necessary here, as it's just a static
+    # site.
+    environment:
+      name: review/$CI_COMMIT_REF_SLUG
+      url: https://$CI_PROJECT_ROOT_NAMESPACE.gitlab.io/-/openflexure-microscope/-/jobs/$JOB_ID/artifacts/builds/index.html
+
+
+# Deploy to builds.openflexure.org
+deploy:
+  stage: deploy
+  extends: .fewer_rules_common
+  dependencies:
+    - build
+    - render
+    - build-docs
+  image: ubuntu:latest
+
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - chmod 400 "$OPENFLEXURE_BUILD_SERVER_SSH_KEY"
+    - ssh-add "$OPENFLEXURE_BUILD_SERVER_SSH_KEY"
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo -e "Host buildserver\n\tHostname build.openflexure.org\n\tUser gitlab-ci-user\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+
+  script:
+    # Install rsync if not already installed
+    - 'which rsync || ( apt-get update -y && apt-get install rsync -y )'
+
+    # Upload the builds folder to openflexure-microscope builds
+    - rsync -hrvz -e ssh builds/ buildserver:builds/openflexure-microscope/${CI_COMMIT_REF_NAME} --delete
+
+    # Zip the builds folder and upload it to the openflexure-microscope build root
+    - 'which zip || ( apt-get update -y && apt-get install zip -y )'
+    - (cd builds && zip -r "../${CI_PROJECT_NAME}-${CI_COMMIT_REF_NAME}.zip" .)
+    - rsync -hrvz -e ssh "${CI_PROJECT_NAME}-${CI_COMMIT_REF_NAME}.zip" buildserver:builds/openflexure-microscope/
+
+    # Run update-latest.py on the build server
+    - ssh -t buildserver "~/update-latest.sh"
+
+  artifacts:
+    expire_in: 1 week
+    name: "${CI_PROJECT_NAME}-${CI_COMMIT_REF_NAME}.zip"
+    paths:
+      - "${CI_PROJECT_NAME}-${CI_COMMIT_REF_NAME}.zip"

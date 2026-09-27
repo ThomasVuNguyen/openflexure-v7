@@ -1,0 +1,147 @@
+"""
+Testing can't easily be done on the Git logic without creating a lot of
+dummy repositories. The key thing that could go wrong is the regex for
+the version strings
+"""
+
+# Disable relative import checks as this is only run by pytest
+# pylint: disable=relative-beyond-top-level
+from ..util import _is_release
+
+def test_release_tag():
+    """
+    Check a number of well formed and malformed version strings
+    return as expected.
+    """
+    #valid
+    assert _is_release("v0.0.1")
+    assert _is_release("v0.1.0")
+    assert _is_release("v1.0.0")
+    assert _is_release("v99.99.99")
+    #valid beta
+    assert _is_release("v0.0.1-beta1")
+    assert _is_release("v0.1.0-beta1")
+    assert _is_release("v1.0.0-beta1")
+    assert _is_release("v99.99.99-beta1")
+    assert _is_release("v0.0.1-beta10")
+    assert _is_release("v0.1.0-beta10")
+    assert _is_release("v1.0.0-beta10")
+    assert _is_release("v99.99.99-beta10")
+    #valid release candidate
+    assert _is_release("v0.0.1-rc1")
+    assert _is_release("v0.1.0-rc1")
+    assert _is_release("v1.0.0-rc1")
+    assert _is_release("v99.99.99-rc1")
+    assert _is_release("v0.0.1-rc10")
+    assert _is_release("v0.1.0-rc10")
+    assert _is_release("v1.0.0-rc10")
+    assert _is_release("v99.99.99-rc10")
+    # can't be both a beta and an rc
+    assert not _is_release("v0.0.1-beta1-rc1")
+    assert not _is_release("v0.1.0-beta1-rc1")
+    assert not _is_release("v1.0.0-beta1-rc1")
+    assert not _is_release("v99.99.99-beta1-rc1")
+    assert not _is_release("v0.0.1-beta10-rc1")
+    assert not _is_release("v0.1.0-beta10-rc1")
+    assert not _is_release("v1.0.0-beta10-rc1")
+    assert not _is_release("v99.99.99-beta10-rc1")
+    #invalid leading zero
+    assert not _is_release("v0.01.0")
+    assert not _is_release("v0.0.01")
+    assert not _is_release("v01.0.0")
+    assert not _is_release("v1.0.0-beta01")
+    assert not _is_release("v1.0.0-rc01")
+    #Don't include alphas
+    assert not _is_release("v0.0.1-alpha1")
+    assert not _is_release("v0.1.0-alpha1")
+    assert not _is_release("v1.0.0-alpha1")
+    assert not _is_release("v99.99.99-alpha1")
+    #Enforce dash before beta or rc
+    assert not _is_release("v0.0.1beta1")
+    assert not _is_release("v0.1.0beta1")
+    assert not _is_release("v1.0.0beta1")
+    assert not _is_release("v99.99.99beta1")
+    assert not _is_release("v0.0.1beta10")
+    assert not _is_release("v0.1.0beta10")
+    assert not _is_release("v1.0.0beta10")
+    assert not _is_release("v99.99.99beta10")
+    assert not _is_release("v0.0.1rc1")
+    assert not _is_release("v0.1.0rc1")
+    assert not _is_release("v1.0.0rc1")
+    assert not _is_release("v99.99.99rc1")
+    assert not _is_release("v0.0.1rc10")
+    assert not _is_release("v0.1.0rc10")
+    assert not _is_release("v1.0.0rc10")
+    assert not _is_release("v99.99.99rc10")
+    #Enforce leading v
+    assert not _is_release("0.0.1")
+    assert not _is_release("0.1.0")
+    assert not _is_release("1.0.0")
+    assert not _is_release("99.99.99")
+    assert not _is_release("0.0.1-beta1")
+    assert not _is_release("0.1.0-beta1")
+    assert not _is_release("1.0.0-beta1")
+    assert not _is_release("99.99.99-beta1")
+    assert not _is_release("0.0.1-beta10")
+    assert not _is_release("0.1.0-beta10")
+    assert not _is_release("1.0.0-beta10")
+    assert not _is_release("99.99.99-beta10")
+    assert not _is_release("0.0.1-rc1")
+    assert not _is_release("0.1.0-rc1")
+    assert not _is_release("1.0.0-rc1")
+    assert not _is_release("99.99.99-rc1")
+    assert not _is_release("0.0.1-rc10")
+    assert not _is_release("0.1.0-rc10")
+    assert not _is_release("1.0.0-rc10")
+    assert not _is_release("99.99.99-rc10")
+    #Enforce lowercase v
+    assert not _is_release("V0.0.1")
+    assert not _is_release("V0.1.0")
+    assert not _is_release("V1.0.0")
+    assert not _is_release("V99.99.99")
+    assert not _is_release("V0.0.1-beta1")
+    assert not _is_release("V0.1.0-beta1")
+    assert not _is_release("V1.0.0-beta1")
+    assert not _is_release("V99.99.99-beta1")
+    assert not _is_release("V0.0.1-beta10")
+    assert not _is_release("V0.1.0-beta10")
+    assert not _is_release("V1.0.0-beta10")
+    assert not _is_release("V99.99.99-beta10")
+    assert not _is_release("V0.0.1-rc1")
+    assert not _is_release("V0.1.0-rc1")
+    assert not _is_release("V1.0.0-rc1")
+    assert not _is_release("V99.99.99-rc1")
+    assert not _is_release("V0.0.1-rc10")
+    assert not _is_release("V0.1.0-rc10")
+    assert not _is_release("V1.0.0-rc10")
+    assert not _is_release("V99.99.99-rc10")
+    #don't allow point releases for rc or alpha
+    assert not _is_release("v99.99.99-beta1.1")
+    assert not _is_release("v99.99.99-rc1.1")
+    # Don't allow missing numbers
+    assert not _is_release("v1.0")
+    assert not _is_release("v0.1")
+    assert not _is_release("v.1.0")
+    assert not _is_release("v0.1.")
+    assert not _is_release("v1.0-beta1")
+    assert not _is_release("v1.0-rc1")
+    assert not _is_release("v1.0.0-beta")
+    assert not _is_release("v1.0.0-rc")
+    # Don't allow internal leading, or trailing spaces
+    assert not _is_release(" v0.0.1")
+    assert not _is_release("v0.1.0 ")
+    assert not _is_release("v1.0. 0")
+    assert not _is_release("v99 .99.99")
+    assert not _is_release(" v0.0.1-beta1")
+    assert not _is_release("v0. 1.0-beta1")
+    assert not _is_release("v1.0.0-beta1 ")
+    assert not _is_release(" v99.99.99- beta1")
+    assert not _is_release("v0.0.1-beta10 ")
+    assert not _is_release("v0.1.0-be ta10")
+    assert not _is_release("v1.0 .0-beta10")
+    assert not _is_release(" v99.99.99-beta10")
+    # Don't other misc tags
+    assert not _is_release("very-nice-tag1.0")
+    assert not _is_release("something")
+    assert not _is_release("")
+    assert not _is_release("Test")

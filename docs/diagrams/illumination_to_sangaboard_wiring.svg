@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="41.08688mm"
+   height="42.083988mm"
+   viewBox="0 0 41.08688 42.083988"
+   version="1.1"
+   id="svg20902"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="illumination_to_sangaboard_wiring(1).svg"
+   inkscape:export-filename="illumination_to_sangaboard_wiring.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs20896">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow1Send"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path20432" />
+    </marker>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1">
+      <path
+         id="path1"
+         d="m 58.469879,129.92396 c -0.470676,-0.029 -0.730351,-0.12331 -1.04697,-0.38038 -0.313219,-0.25431 -0.560298,-0.64816 -0.635982,-1.01377 -0.02399,-0.1159 -0.03425,-1.61459 -0.03425,-5.0043 0,-5.10847 -0.0037,-4.96535 0.131557,-5.09655 0.0952,-0.0924 0.240119,-0.17077 0.414824,-0.22447 0.161179,-0.0495 0.327783,-0.0593 1.193388,-0.07 l 1.006055,-0.0124 0.08363,-0.0992 c 0.177669,-0.21069 0.167852,0.0761 0.167665,-4.89853 -1.26e-4,-3.11246 -0.01076,-4.63653 -0.03293,-4.71636 -0.01802,-0.0649 -0.07559,-0.16673 -0.127948,-0.22636 l -0.09519,-0.10843 H 58.55058 c -0.847885,0 -0.967624,-0.006 -1.18542,-0.0634 -0.314352,-0.0823 -0.462716,-0.17765 -0.546761,-0.35127 l -0.06664,-0.13766 0.0083,-5.08616 0.0083,-5.086159 0.07509,-0.187331 c 0.245561,-0.612609 0.723552,-1.029719 1.320771,-1.152547 0.218021,-0.04484 1.921795,-0.04949 18.117789,-0.04949 16.195992,0 17.899771,0.0047 18.117793,0.04949 0.624266,0.128391 1.105204,0.563023 1.36095,1.229901 l 0.06612,0.172422 0.0033,5.967774 0.428135,0.006 -0.03741,20.94001 -0.383426,-5.3e-4 c 0,0 -0.0158,4.06795 -0.04323,4.192 -0.145803,0.66332 -0.650872,1.1909 -1.309957,1.36832 -0.168788,0.0454 -0.653264,0.0501 -4.894924,0.0474 -3.896349,-0.003 -4.724924,-0.0103 -4.808162,-0.0455 -0.13997,-0.0591 -0.245671,-0.17429 -0.369305,-0.40229 l -0.105929,-0.19533 -0.01564,-5.52895 -0.01564,-5.52895 -0.08919,-0.12869 c -0.104569,-0.15087 -0.246669,-0.20972 -0.441841,-0.18297 -0.182023,0.0249 -0.347599,0.12958 -0.447133,0.28254 l -0.08338,0.12815 -0.01564,5.60432 -0.01564,5.60432 -0.07296,0.11736 c -0.04014,0.0645 -0.137338,0.15507 -0.216014,0.20118 l -0.14305,0.0838 -11.976115,0.002 c -6.586864,0.001 -12.123639,-0.007 -12.303946,-0.0184 z"
+         style="fill:#ffffff;fill-opacity:0.651628;stroke-width:0.537289"
+         sodipodi:nodetypes="cssscccccccccscsccccsscscccccccccscccsccccccccccc" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     lock-margins="true"
+     fit-margin-bottom="1"
+     fit-margin-right="1"
+     fit-margin-left="1"
+     fit-margin-top="1"
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="1312"
+     inkscape:window-height="868"
+     inkscape:window-width="1440"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="83.463853"
+     inkscape:cx="77.402938"
+     inkscape:zoom="3.959798"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:snap-center="false" />
+  <metadata
+     id="metadata20899">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-55.751757,-94.959158)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <image
+       width="40.647129"
+       height="35.48077"
+       preserveAspectRatio="none"
+       xlink:href="sangaboard_v0.5.png"
+       id="image959"
+       x="56.002815"
+       y="95.224968" />
+    <image
+       xlink:href="sangaboard_v0.5.png"
+       y="98"
+       x="12"
+       width="-60"
+       height="64.305908"
+       preserveAspectRatio="none"
+       id="image21475"
+       style="stroke-width:8.47428"
+       clip-path="url(#clipPath1)" />
+    <rect
+       y="90.300049"
+       x="126.61257"
+       height="1.6704345"
+       width="3.1070082"
+       id="rect20257"
+       style="clip-rule:evenodd;fill:#999999;fill-rule:evenodd;stroke:#000000;stroke-width:0.264999;stroke-linejoin:round"
+       transform="matrix(0,1,1,0,0,0)" />
+    <path
+       id="path20415"
+       d="m 80.318313,117.92564 8.35851,7.36176"
+       style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send)" />
+    <g
+       id="g2"
+       transform="translate(2.5193183,2.208864)">
+      <path
+         id="path20267"
+         d="m 88.92226,125.40659 v -0.31485 h -0.607484 v 0.60748 h 0.607484 z"
+         style="clip-rule:evenodd;fill:#000000;fill-rule:evenodd;stroke:#373435;stroke-width:0.0238125px;stroke-linejoin:round" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path20711"
+         d="m 88.637379,125.35758 c -5.30907,-0.20046 -0.686983,4.81253 -6.099186,4.81253"
+         style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g1"
+       transform="translate(4.1860505,3.5579908)">
+      <path
+         id="path20291"
+         d="m 87.287399,125.40659 v -0.31485 h -0.615156 v 0.60748 h 0.615156 z"
+         style="clip-rule:evenodd;fill:#ff0000;fill-rule:evenodd;stroke:#373435;stroke-width:0.0238125px;stroke-linejoin:round" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 86.983733,125.36939 c -4.094993,-0.18758 -0.07136,6.34815 -7.75175,6.28072"
+         id="path20713" />
+    </g>
+    <text
+       id="text20741"
+       y="133.02318"
+       x="67.392036"
+       style="font-size:2.82223px;line-height:100%;font-family:sans-serif;clip-rule:evenodd;fill-rule:evenodd;stroke-width:0.264583;stroke-linejoin:round"
+       xml:space="preserve"><tspan
+         style="font-size:2.82223px;stroke-width:0.264583"
+         y="133.02318"
+         x="67.392036"
+         id="tspan20739"
+         sodipodi:role="line">GND to LED</tspan><tspan
+         style="font-size:2.82223px;stroke-width:0.264583"
+         id="tspan20743"
+         y="135.84541"
+         x="67.392036"
+         sodipodi:role="line">+ve to LED</tspan></text>
+  </g>
+</svg>
